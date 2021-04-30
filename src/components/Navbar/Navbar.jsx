@@ -30,7 +30,7 @@ export default function Navbar() {
 
                 {MenuItems.map((item, index) => {
                     return (
-                        <li className={styles.navbarItem} key={index}><a className={styles.navLink} href={item.url}>
+                        <li key={index}><a className={styles.navLink} href={item.url}>
                             {item.title}
                             </a>
                             </li>
