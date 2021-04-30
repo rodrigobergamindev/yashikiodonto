@@ -21,7 +21,7 @@ export default function Navbar() {
             <h1 className={styles.navbarLogo}>LOJINHA DA MAYUMI</h1>
 
             <div className={styles.menuIcon} onClick={(handleClickChange)}>
-            <FontAwesomeIcon icon={clicked? faTimes : faBars}>
+            <FontAwesomeIcon icon={clicked? faTimes : faBars} color={'white'}>
 
             </FontAwesomeIcon>
             </div>
@@ -30,7 +30,7 @@ export default function Navbar() {
 
                 {MenuItems.map((item, index) => {
                     return (
-                        <li key={index}><a className={item.cName} href={item.url}>
+                        <li className={styles.navbarItem} key={index}><a className={styles.navLink} href={item.url}>
                             {item.title}
                             </a>
                             </li>

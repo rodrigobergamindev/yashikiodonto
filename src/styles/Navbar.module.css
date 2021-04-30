@@ -9,12 +9,10 @@
     font-size: 1.2rem;
     min-height: 80px;
     border: 2px solid black;
+    background-color: #80565d;
     
 }
 
-.navbarItems{
-    height: 80px;
-}
 
 
 .navbarLogo {
@@ -29,9 +27,84 @@
     display: grid;
     grid-template-columns: repeat(6, auto);
     grid-gap: 10px;
-    list-style: none;
+    list-style-type: none;
     text-align: center;
     width: 70vw;
     justify-content: end;
     margin-right: 2rem;
+    
+}
+
+.navLink {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.navLink:hover {
+    background-color: black;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+}
+
+.menuIcon {
+    display: none;
+}
+
+@media screen and (max-width: 960px) {
+    .navbarItem {
+        position: relative;
+    }
+
+
+    .navMenu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .menuActive {
+        background: aqua;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+
+    }
+
+    .navLink {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    .navLink:hover {
+        background-color: red;
+        border-radius: 0;
+    }
+
+    .navbarLogo {
+        position: absolute;
+        top:0;
+        left:0;
+        transform: translate(25%, 50%);
+    }
+
+    .menuIcon {
+        display: block;
+        position: absolute;
+        top:0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer; 
+    }
+
 }
