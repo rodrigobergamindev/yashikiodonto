@@ -1,6 +1,6 @@
 export const MenuItems = [
     {
-        title: 'Home',
+        title: 'Início',
         url: '#',
     },
     {
@@ -17,10 +17,6 @@ export const MenuItems = [
     },
     {
         title: 'Pagamento',
-        url: '#',
-    },
-    {
-        title: 'Como Comprar',
         url: '#',
     }
 
