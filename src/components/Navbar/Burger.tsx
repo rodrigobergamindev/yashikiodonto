@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import RightNav from './RightNav';
 
+
 const StyledBurger = styled.div`
   width: 2rem;
   height: 2rem;
   position: fixed;
-  top: 15px;
+  top: 12px;
   right: 15px;
   z-index: 20;
   display: none;
@@ -18,7 +19,7 @@ const StyledBurger = styled.div`
   }
   div {
     width: 2rem;
-    height: 0.25rem;
+    height: 0.15rem;
     background-color: ${({ open }) => open ? 'white' : '#fc5c65'};
     border-radius: 20px;
     transform-origin: 1px;

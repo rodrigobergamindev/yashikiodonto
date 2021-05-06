@@ -1,6 +1,6 @@
-import React from 'react';
 import styled from 'styled-components';
 import Burger from './Burger';
+import Image from 'next/image';
 
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
@@ -15,14 +15,25 @@ const Nav = styled.nav`
   
   .logo {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items:center;
     flex: 1;
-    color: #fc5c65;
-    font-size: 1.2em;
+    cursor: pointer;
+    flex-flow: row nowrap;
+    
+    h1 {
+      font-family:'Jaldi';
+      padding: 12px;
+      color: #121214;
+      font-size: 1.3em;
+
+      &:hover{
+        color: #e74c3c;
+      }
+    }
 
     @media (max-width: 931px) {
-        justify-content: center;
+        
      }
 
   }
@@ -31,13 +42,16 @@ const SocialMedia = styled.ul`
     flex:1;
     list-style: none;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     flex-flow: row nowrap;
-
+    position:relative;
+    right: 20px;
+    top: 5px;
 
     li{
-        padding: 2rem;
-        font-size: 1.2em;
+        padding: 0.7rem;
+        cursor: pointer;
+
     }
 
     @media (max-width: 931px) {
@@ -50,20 +64,17 @@ const Navbar = () => {
   return (
     <Nav>
       <div className="logo">
-        LOJINHA DA MAYUMI
+      <Image src="/img/logo.png" width={40} height={20} />
+        <h1>LOJINHA DA MAYUMI</h1>
       </div>
       <Burger />
-    <SocialMedia>
-        <li>
-            Facebook
-        </li>
-        <li>
-           Instagram
-        </li>
-        <li>
-            WhatsApp
-        </li>
-    </SocialMedia>
+
+      <SocialMedia>
+        <li><FacebookIcon style={{color:'#121214'}} fontSize="small"></FacebookIcon></li>
+        <li><InstagramIcon style={{color:'#333'}} fontSize="small"></InstagramIcon></li>
+        <li><WhatsAppIcon style={{color:'#333'}} fontSize="small"></WhatsAppIcon></li>
+      </SocialMedia>
+
     </Nav>
   )
 }

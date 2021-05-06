@@ -1,13 +1,23 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.scss'
+import styled from 'styled-components';
 
 import Navbar from '../components/Navbar/Navbar'
+import { Section } from '../components/Section/Section'
+
+
+const Body = styled.div`
+      display: flex;
+      flex-flow: column nowrap; 
+`
+
+
 
 export default function Home() {
   return (
-    <div>
+    <Body>
       <Navbar/>
-      </div>
+      <Section/>
+      </Body>
   )
 }

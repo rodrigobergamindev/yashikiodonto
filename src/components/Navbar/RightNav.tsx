@@ -11,28 +11,32 @@ const Ul = styled.ul`
   align-items: center;
   justify-content: center;
 
-  li {
-    color: #fc5c65;
-    padding: 0.7rem;
-
-    a{ 
-        padding: 5px;
-        font-size: 1.2em;
-        border-radius: 9px;
-
-        &:hover{
-            color:white;
-            background-color: #fc5c65;
-            transition: 0.3s ease-in-out;
-            
-        }
+  @media(min-width: 931px){
+    li {
+      color: #fc5c65;
+      padding: 0.7rem;
+  
+      &:hover{
+        border-bottom: 1px solid #fc5c65;
+        transition: 0.3s ease-in-out;
+        
     }
+  
+      a{ 
+          padding: 5px;
+          font-size: 1.2em;
+          border-radius: 9px;
+      }
+  }
+
+
 
 
   }
   @media (max-width: 931px) {
+
       
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); 
+    
     flex-flow: column nowrap;
     background-color: #fc5c65;
     position: fixed;
@@ -41,12 +45,12 @@ const Ul = styled.ul`
     right: 0;
     height: 100vh;
     width: 300px;
-    padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
 
     li {
       color: white;
-
+      padding: 0.7rem;
+      width: 100%;
       &:hover{
           color:#fc5c65;
           background-color: white;
