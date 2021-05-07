@@ -6,6 +6,8 @@ import {SliderItems} from './SliderItems'
 
 
 
+
+
 const Container = styled.section`
     display: flex;
     flex-flow: column nowrap;
@@ -33,7 +35,8 @@ const FirstContent = styled.section`
     align-items:center;
     justify-content: space-around;
     padding: 4rem;
-    max-width:1200px;
+    width:1200px;
+
 
     .description {
         margin-right: 3rem;
@@ -69,8 +72,11 @@ const FirstContent = styled.section`
             cursor: pointer;   
             font-size: 1.04em; 
 
+
             &:hover{
-                background-color: #bdc3c7;
+                background-color: #fc5c65;
+                color: white;
+                transition: 0.3s ease-in-out;
             }
         }
     }
@@ -87,7 +93,7 @@ const SecondContent = styled.section`
     display: flex;
     flex-flow: row nowrap;
     align-items:center;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 4rem;
     width:100%;
 
@@ -98,36 +104,43 @@ const SecondContent = styled.section`
     background-size: cover;
     transition: 0.6s ease-in-out;
 
-    div {
-        display:flex;
-        flex-flow: column nowrap;
-        background-color:white;
-        max-width: 450px;
-        max-height: 400px;
-        align-items: flex-start;
-        opacity: 0.92;
-        z-index: 1;
+    .miniContainer{
+        width: 1200px;
+       
 
-        ul{
-            margin-top: 1rem;
+        div {
             display:flex;
-            flex-flow: row nowrap;
-            list-style: none;
-            justify-content: space-around;
-            width: 100%;
-            border-bottom: 2px solid #f1f1f1;
-
-            li {
-                font-size: 1.4em;
-                cursor: pointer;
-                height:60px;
-                text-align: center;
-                &:hover{
-                    border-bottom: 2px solid #fc5c65;
+            flex-flow: column nowrap;
+            background-color:white;
+            max-width: 450px;
+            max-height: 400px;
+            align-items: flex-start;
+            opacity: 0.92;
+            z-index: 1;
+    
+            ul{
+                margin-top: 1rem;
+                display:flex;
+                flex-flow: row nowrap;
+                list-style: none;
+                justify-content: space-around;
+                width: 100%;
+                border-bottom: 2px solid #f1f1f1;
+    
+                li {
+                    font-size: 1.4em;
+                    cursor: pointer;
+                    height:60px;
+                    text-align: center;
+                    display:flex;
+                    flex-flow: column nowrap;
+                    
+                    }
+    
                 }
-
             }
-        }
+
+    }
 
         .description {
             display: flex;
@@ -180,7 +193,6 @@ export function Section() {
     const[subtitle, setSubtitle] = useState('Cada berloque é um pedaço da sua história')
 
 
-
     return (
         <Container>
             <FirstContent>
@@ -199,18 +211,20 @@ export function Section() {
 
             </FirstContent>
             <SecondContent background={background}>
+                <div className="miniContainer">
                 <div>
 
                     <ul>
                     {SliderItems.map((item, index) => {
                     return (
-                        <li key={index}  onClick={() => {
+                        <li key={index} style={{borderBottom: item.clicked? '2px solid black' : 'none'}} onClick={() => {
                             setBackground(item.url)
                             setDescription(item.description)
                             setSubtitle(item.subtitle)
-
+                            item.clicked = !item.clicked
                         }}>
                             {item.title}
+                            <div/>
                             </li>
                     )
                     })}
@@ -221,6 +235,7 @@ export function Section() {
                     <p>{description}</p>
                      <button>Faça seu pedido</button>
                        
+                </div>
                 </div>
                 </div>
             </SecondContent>

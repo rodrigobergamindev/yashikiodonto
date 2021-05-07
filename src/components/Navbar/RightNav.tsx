@@ -25,7 +25,6 @@ const Ul = styled.ul`
       a{ 
           padding: 5px;
           font-size: 1.2em;
-          border-radius: 9px;
       }
   }
 
