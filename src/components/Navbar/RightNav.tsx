@@ -9,7 +9,7 @@ const Ul = styled.ul`
   flex-flow: row nowrap;
   flex: 1;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 
   @media(min-width: 931px){
     li {

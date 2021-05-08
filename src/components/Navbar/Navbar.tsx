@@ -2,9 +2,6 @@ import styled from 'styled-components';
 import Burger from './Burger';
 import Image from 'next/image';
 
-import FacebookIcon from '@material-ui/icons/Facebook';
-import InstagramIcon from '@material-ui/icons/Instagram';
-import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 
 const Nav = styled.nav`
   height: 55px;
@@ -38,27 +35,7 @@ const Nav = styled.nav`
 
   }
 `
-const SocialMedia = styled.ul`
-    flex:1;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    flex-flow: row nowrap;
-    position:relative;
-    right: 20px;
-    top: 5px;
 
-    li{
-        padding: 0.7rem;
-        cursor: pointer;
-
-    }
-
-    @media (max-width: 931px) {
-        display:none;
-     }
-
-`
 
 const Navbar = () => {
   return (
@@ -68,13 +45,6 @@ const Navbar = () => {
         <h1>LOJINHA DA MAYUMI</h1>
       </div>
       <Burger />
-
-      <SocialMedia>
-        <li><FacebookIcon style={{color:'#121214'}} fontSize="small"></FacebookIcon></li>
-        <li><InstagramIcon style={{color:'#333'}} fontSize="small"></InstagramIcon></li>
-        <li><WhatsAppIcon style={{color:'#333'}} fontSize="small"></WhatsAppIcon></li>
-      </SocialMedia>
-
     </Nav>
   )
 }

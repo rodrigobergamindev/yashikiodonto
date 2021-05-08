@@ -22,6 +22,7 @@ const SecondContent = styled.section`
     justify-content: center;
     padding: 4rem;
     width:100%;
+   
 
     height:100vh;
     background-image: url(${props => props.background || "red"});
@@ -31,7 +32,8 @@ const SecondContent = styled.section`
 
     .miniContainer{
         width: 1200px;
-       
+        
+        
 
         div {
             display:flex;

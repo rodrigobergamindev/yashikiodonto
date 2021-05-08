@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import InstagramIcon from '@material-ui/icons/Instagram';
 
 
 interface PostProps {
@@ -15,10 +16,17 @@ const Card = styled.div`
     max-width: 250px;
     max-height: 250px;
     margin: 0.5rem;
+    display:flex;
+    justify-content: center;
     
     img {
         width: 250px;
         height: 250px;
+
+        &:hover {
+            filter: brightness(65%);
+            transition: 0.1s ease;
+        }
     }
 
 
@@ -28,12 +36,6 @@ const Card = styled.div`
         align-items:center;
         justify-content: center;
 
-        &:hover {
-            filter: blur(2px);
-            transition: 0.1s ease;
- 
-        }
-
     }
 
 `
@@ -42,10 +44,8 @@ export function Post(props: PostProps) {
     return (
         <Card>
             <a href={props.post.permalink}>
-            <img src={props.post.media_url} alt="">
-                
+            <img src={props.post.media_url} alt="">  
             </img>
-            
             </a>
         </Card>
     )

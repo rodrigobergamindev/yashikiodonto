@@ -25,7 +25,10 @@ const FirstContent = styled.section`
     width:1200px;
 
 
+
+
     .description {
+        
         margin-right: 3rem;
         max-height:350px;
         max-width: 600px;
@@ -35,7 +38,7 @@ const FirstContent = styled.section`
         padding: 1rem;
         justify-content: space-between;
       
-
+            
         h1 {
             max-width: 450px;
             font-size: 2.5em;
@@ -45,7 +48,7 @@ const FirstContent = styled.section`
 
         p{  
             margin-top:1rem;
-            margin-bottom:1rem;
+            margin-bottom:2rem;
             max-width: 400px;
             font-size: 1.2em;
             text-align: left;
@@ -86,10 +89,9 @@ const DisplaySocialMedia = styled.div`
     margin-bottom: 2rem;
 
     button {
-        margin-top: 1rem;    
+        margin-top: 2rem;    
         display:flex;
         align-items: center;
-        justify-content: center;
         max-width:200px;
         border: none;
         padding:5px;
@@ -109,12 +111,14 @@ const DisplaySocialMedia = styled.div`
 
     .title {
         padding: 2rem;
+        margin-left: 5rem;
         display:flex;
         flex-flow: column nowrap;
         align-items: flex-start;
         justify-self: flex-start;
         width: 100%;
-        margin-left: 5rem;
+
+        
 
         p {
             line-height:0.9em;
@@ -155,7 +159,7 @@ export function Section() {
 
             <div className="title">
                 <h1>Visite nosso Instagram</h1>
-                <p>Fique por dentro das novidades de berloques, pulseiras e outros acessórios, em primeira mão sempre no nosso feed!</p>
+                <p>Fique por dentro das nossas novidades, em primeira mão sempre no nosso feed!</p>
             </div>
 
             <InstagramFeed></InstagramFeed>
@@ -163,9 +167,7 @@ export function Section() {
             <button><InstagramIcon style={{color:"white", fontSize:"0.95em", marginTop:'2px', marginRight:'2px'}}></InstagramIcon>@lojinha_da_mayumi</button>
 
            </DisplaySocialMedia>
-            <div>
 
-            </div>
         </Container>
     )
 }
