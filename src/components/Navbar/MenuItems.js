@@ -1,23 +1,23 @@
 export const MenuItems = [
     {
         title: 'Início',
-        url: '#',
+        url: 'Inicio',
     },
     {
         title: 'Sobre',
-        url: '#',
+        url: 'Sobre',
     },
     {
         title: 'Produtos',
-        url: '#',
+        url: 'Produtos',
     },
     {
         title: 'Contato',
-        url: '#',
+        url: 'Contato',
     },
     {
         title: 'Pagamento',
-        url: '#',
+        url: 'Pagamento',
     }
 
 ]
