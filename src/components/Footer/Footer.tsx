@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const StyledFooter = styled.footer`
 
-    height: 80vh;
+    height: 45vh;
     background-color:#fc5c65;
 
     display:flex;
@@ -25,6 +25,12 @@ const StyledFooter = styled.footer`
 
         .titleFooter {
             padding: 1rem;
+            h1 {
+                font-weight: 400;
+            }
+            h4 {
+                font-weight: 400;
+            }
         }
     
         .containerItems {
@@ -69,6 +75,7 @@ export default function Footer() {
             <div className="containerFooter">
             <div className="titleFooter">
                     <h1>LOJINHA DA MAYUMI</h1>
+                    <h4>Irashaimase ⛩</h4>
                 </div>
             <div className="containerItems">
                 
