@@ -7,14 +7,15 @@ const Nav = styled.nav`
   height: 55px;
   border-bottom: 2px solid #f1f1f1;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items:center;
   
   .logo {
-    display: flex;
-    justify-content: center;
-    align-items:center;
     flex: 1;
+    padding: 1rem;
+    display: flex;
+    align-items:center;
+
     cursor: pointer;
     flex-flow: row nowrap;
     
@@ -36,6 +37,26 @@ const Nav = styled.nav`
   }
 `
 
+const SocialMediaList = styled.ul`
+
+        display:flex;
+        list-style: none;
+
+        padding: 0.5rem;
+        flex: 1;
+        justify-content: flex-end;
+        position: relative;
+        top: 5px;
+        li {
+          padding: 0.5rem;
+
+          img {
+            width: 25px;
+            height: 25px;
+          }
+        }
+`
+
 
 const Navbar = () => {
   return (
@@ -45,6 +66,12 @@ const Navbar = () => {
         <h1>LOJINHA DA MAYUMI</h1>
       </div>
       <Burger />
+    <SocialMediaList>
+      <li><img src="/img/instagram-color.svg"/></li>
+      <li><img src="/img/tiktok-color.svg"/></li>
+      <li><img src="/img/facebook-color.svg"/></li>
+      <li><img src="/img/whatsapp-color.svg"/></li>
+    </SocialMediaList>
     </Nav>
   )
 }

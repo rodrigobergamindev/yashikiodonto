@@ -7,18 +7,18 @@ const Ul = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
-  flex: 1;
   align-items: center;
-  justify-content: flex-start;
+
 
   @media(min-width: 931px){
+    justify-content: center;
+   
     li {
       color: #fc5c65;
       padding: 0.7rem;
-  
+
       &:hover{
         border-bottom: 1px solid #fc5c65;
-        transition: 0.3s ease-in-out;
         
     }
   
@@ -68,6 +68,8 @@ const Ul = styled.ul`
     }
   }
 `;
+
+
 
 const RightNav = ({ open }) => {
   return (

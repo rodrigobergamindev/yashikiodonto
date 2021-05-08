@@ -43,7 +43,7 @@ const Card = styled.div`
 export function Post(props: PostProps) {
     return (
         <Card>
-            <a href={props.post.permalink}>
+            <a href={props.post.permalink} target="_blank">
             <img src={props.post.media_url} alt="">  
             </img>
             </a>
