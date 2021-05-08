@@ -25,7 +25,6 @@ const Card = styled.div`
 
         &:hover {
             filter: brightness(65%);
-            transition: 0.1s ease;
         }
     }
 

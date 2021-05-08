@@ -53,6 +53,11 @@ const SocialMediaList = styled.ul`
           img {
             width: 20px;
             height: 20px;
+
+            &:hover  {
+              transform: scale(1.5);
+              transition: all 0.3s ease;
+            }
           }
         }
 `
@@ -67,10 +72,10 @@ const Navbar = () => {
       </div>
       <Burger />
     <SocialMediaList>
-      <li><img src="/img/instagram-color.svg"/></li>
-      <li><img src="/img/tiktok-color.svg"/></li>
-      <li><img src="/img/facebook-color.svg"/></li>
-      <li><img src="/img/whatsapp-color.svg"/></li>
+      <li><img src="/img/instagram.svg"/></li>
+      <li><img src="/img/tiktok.svg"/></li>
+      <li><img src="/img/facebook.svg"/></li>
+      <li><img src="/img/whatsapp.svg"/></li>
     </SocialMediaList>
     </Nav>
   )
