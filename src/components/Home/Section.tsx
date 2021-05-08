@@ -65,6 +65,8 @@ const FirstContent = styled.section`
             font-size: 1.04em; 
             border-radius: 2px;
 
+            
+
 
             &:hover{
                 background-color: #fc5c65;

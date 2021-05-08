@@ -27,6 +27,7 @@ const StyledFooter = styled.footer`
             padding: 1rem;
             h1 {
                 font-weight: 400;
+                line-height:1.2em;
             }
             h4 {
                 font-weight: 400;

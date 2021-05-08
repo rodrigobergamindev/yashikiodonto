@@ -8,7 +8,7 @@ const StyledFeed = styled.div`
 
     display: flex;
     flex-flow: row wrap;
-    max-width: 1200px;
+    width: 100%;
     align-items: center;
     justify-content: center;
 
