@@ -37,8 +37,6 @@ export function PostVideo(props: PostProps) {
             <video controls
                 src={props.post.media_url}
                 width="250" height="250">
-
-
                 </video>
             </a>
         </Card>
