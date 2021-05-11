@@ -76,7 +76,7 @@ export default function Footer() {
             <div className="containerFooter">
             <div className="titleFooter">
                     <h1>LOJINHA DA MAYUMI</h1>
-                    <h4>Irashaimase ⛩</h4>
+                    <h4>Arigatou gozaimasu ⛩</h4>
                 </div>
             <div className="containerItems">
                 

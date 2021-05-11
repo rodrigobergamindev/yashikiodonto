@@ -18,15 +18,6 @@ const Card = styled.div`
     margin: 0.5rem;
     display:flex;
     justify-content: center;
-    
-    img {
-        width: 250px;
-        height: 250px;
-
-        &:hover {
-            filter: brightness(65%);
-        }
-    }
 
 
 
@@ -39,12 +30,16 @@ const Card = styled.div`
 
 `
 
-export function Post(props: PostProps) {
+export function PostVideo(props: PostProps) {
     return (
         <Card>
             <a href={props.post.permalink} target="_blank">
-            <img src={props.post.media_url} alt="">  
-            </img>
+            <video controls
+                src={props.post.media_url}
+                width="250" height="250">
+
+
+                </video>
             </a>
         </Card>
     )
