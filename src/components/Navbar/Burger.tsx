@@ -20,7 +20,7 @@ const StyledBurger = styled.div`
   div {
     width: 2rem;
     height: 0.15rem;
-    background-color: ${({ open }) => open ? 'white' : '#fc5c65'};
+    background-color: #fc5c65;
     border-radius: 20px;
     transform-origin: 1px;
     transition: all 0.3s linear;

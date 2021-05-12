@@ -12,6 +12,7 @@ const Ul = styled.ul`
 
   @media(min-width: 931px){
     justify-content: center;
+    
    
     li {
       color: #fc5c65;
@@ -24,8 +25,7 @@ const Ul = styled.ul`
           padding: 10px;
           font-size: 1.2em;
 
-          &:hover{
-            
+          &:hover{ 
             border-bottom: 2px solid #fc5c65;
       }
   }
@@ -37,36 +37,20 @@ const Ul = styled.ul`
   @media (max-width: 931px) {
 
       
-    
     flex-flow: column nowrap;
-    background-color: #fc5c65;
+    background-color: white;
+    color: #FC5C65;
     position: fixed;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
-    top: 0;
+    top: 60px;
     right: 0;
-    height: 100vh;
-    width: 300px;
+    width: 340px;
     transition: transform 0.3s ease-in-out;
 
     li {
-      color: white;
       padding: 0.7rem;
       width: 100%;
-      &:hover{
-          color:#fc5c65;
-          background-color: white;
-          transition: 0.3s ease-in-out;
-          box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-      }
 
-      a{
-
-        &:hover{
-            color:#fc5c65;
-            background-color: white;
-            transition: 0.3s ease-in-out;
-            
-        }
     }
   }
 `;

@@ -44,9 +44,6 @@ width: 100%;
       }
     }
 
-    @media (max-width: 931px) {
-        
-     }
 
   }
 `
@@ -77,6 +74,11 @@ const SocialMediaList = styled.ul`
               transition: all 0.3s ease;
             }
           }
+        }
+
+
+        @media (max-width: 931px) {
+          display: none;
         }
 `
 
