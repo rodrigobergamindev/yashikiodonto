@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Footer from "../components/Footer/Footer";
 
 const ContainerProduct = styled.div`
-
+        margin-top: 4rem;
         width: 100%;
         display:flex;
         align-items: center;

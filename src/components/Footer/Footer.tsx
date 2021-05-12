@@ -122,7 +122,7 @@ export default function Footer() {
                         <li>Pix</li>
                         <li>Cartão de Crédito</li>
                         <li>Transferência Bancária</li>
-                        <li>Boleto (parcelamento)</li>
+                        <li>Boleto (à vista ou parcelado)</li>
                     </ul>
                 </div>
 
