@@ -147,7 +147,7 @@ export default function Pagamento() {
                                 entendemos que cada uma de vocês pensa de uma forma diferente e por isso estamos a sua disposição para te ajudar no processo de escolha das peças.
                             </p>
 
-                            <button>Faça seu Pedido</button>
+                            <a href="https://api.whatsapp.com/send?phone=551129639226&text=Ol%C3%A1!%20Me%20ajuda%20a%20fazer%20meu%20pedido%3F" target="_blank"><button>Faça seu Pedido</button></a>
                             </Description>        
 
                         </ContainerDesc>
@@ -183,15 +183,15 @@ export default function Pagamento() {
 
                             </p>
 
-                            
-
-                            <button>Dúvidas</button>
+                            <a href="https://api.whatsapp.com/send?phone=551129639226&text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20meios%20de%20pagamento." target="_blank"><button>Dúvidas</button></a>
                             </Description>        
 
                         </ContainerDesc>
 
 
                     </ContentProduct>
+
+
 
                     <ContentProduct>
 
@@ -210,7 +210,7 @@ export default function Pagamento() {
                                 até um dia útil a depender do horário do pedido, para pedidos feitos aos domingos, serão enviados na segunda. Caso queira rastrear seu pedido,
                                 é só me chamar!</p>
 
-                            <button>Onde está meu pedido?</button>
+                            <a href="https://api.whatsapp.com/send?phone=551129639226&text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20rastreio%20do%20meu%20pedido." target="_blank"><button>Onde está meu pedido?</button></a>
                             </Description>        
 
                         </ContainerDesc>

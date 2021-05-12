@@ -145,7 +145,8 @@ export function Slider() {
                     <div className="description">
                     <h1>{subtitle}</h1>
                     <p>{description}</p>
-                     <button>Faça seu pedido</button>
+                    <a href="https://api.whatsapp.com/send?phone=551129639226&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20as%20pe%C3%A7as%20da%20loja" target="_blank">
+                        <button>Faça seu pedido</button></a>
                        
                 </div>
                 </div>

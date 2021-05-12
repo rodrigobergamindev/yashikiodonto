@@ -149,7 +149,7 @@ export function Section() {
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled 
                         it to make a type specimen book. It has survived not only five centuries.</p>
-                     <button>Consulte nossos catálogos</button>     
+                     <a href="/Produtos"><button>Consulte nossos catálogos</button></a>    
                 </div>
                     <img src="/img/content.jpeg"/>
 
@@ -166,7 +166,7 @@ export function Section() {
 
             <InstagramFeed></InstagramFeed>
 
-            <button><InstagramIcon style={{color:"white", fontSize:"0.95em", marginTop:'2px', marginRight:'2px'}}></InstagramIcon>@lojinha_da_mayumi</button>
+            <a href="https://www.instagram.com/lojinha_da_mayumi/" target="_blank"><button><InstagramIcon style={{color:"white", fontSize:"0.95em", marginTop:'2px', marginRight:'2px'}}></InstagramIcon>@lojinha_da_mayumi</button></a>
 
            </DisplaySocialMedia>
 
