@@ -84,10 +84,14 @@ const SocialMediaList = styled.ul`
 const Navbar = () => {
   return (
     <Nav>
+      
       <div className="logo">
+      
       <Image src="/img/logo.png" width={40} height={20} />
-        <h1>LOJINHA DA MAYUMI</h1>
+        <h1><a href="/">LOJINHA DA MAYUMI</a></h1>
+
       </div>
+     
       <Burger />
     <SocialMediaList>
       <li><a href="https://vm.tiktok.com/ZMegKPN55/" target="_blank"><img src="/img/instagram.png"/></a></li>
