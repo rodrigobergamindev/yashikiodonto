@@ -8,7 +8,7 @@ const ContainerAbout = styled.section`
     flex-flow: column nowrap;
     width: 100%;
     align-items: center;
-
+    margin-bottom: 5rem;
 
     margin-top: 5rem;
 
@@ -19,7 +19,7 @@ const ContainerAbout = styled.section`
         display: flex;
         flex-flow: row nowrap;
         width: 1200px;
-        justify-content: flex-start;
+        
         align-items: flex-start;
 
     
@@ -62,15 +62,19 @@ const ContainerAbout = styled.section`
     }
 
     .bodyAbout {
-        height: 62vh;
-        background-color:#fc5c65;
-        width: 100%;
+
+        height: 90vh;
+        width: 1200px;
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: column nowrap;
       
 
         align-items: center;
         justify-content: center;
+
+        .containerDesc {
+
+        }
 
         .containerBodyAbout {
             width: 1200px;
@@ -78,13 +82,15 @@ const ContainerAbout = styled.section`
             flex-flow: row nowrap;
             align-items: flex-start;
             justify-content: space-between;
-            height: 62vh;
+            height: 90vh;
            
 
 
             .avatarAbout {
+                
               
                 img {
+                    z-index:1;
                     width: 550px;
                     height: 640px;
                     position:absolute;
@@ -99,21 +105,34 @@ const ContainerAbout = styled.section`
                         transition: all 0.3s ease;
                     }
                 }
+
+                .backgroundAvatar {
+                    height: 640px;
+                    width: 580px;
+                    margin-left: 20px;
+                    background:#fc5c65;
+                    position: absolute;
+                    top: 360px;
+                }
             }
     
     
             .bodyAboutDescription {
+                margin-right: 30px;
+                padding: 2rem;
                 height: 30vh;
                 margin-top: 5rem;
-                width: 600px;
+                width: 500px;
+                
                
                 display: flex;
                 flex-flow: column nowrap;
+                justify-content: flex-start;
 
-                color: white;
+                
 
                 h1{
-                    font-weight: 400;
+                    color:#fc5c65;
                     font-size: 2.2em;
                     margin-bottom: 2rem;
                 }
@@ -122,6 +141,8 @@ const ContainerAbout = styled.section`
                     text-align: justify;
                     line-height: 1.5em;
                 }
+
+                
             }
         }
         
@@ -141,7 +162,7 @@ export default function Sobre() {
 
                     <div className="titleAbout">
                         <div className="barAbout">
-
+                            
                         </div>
                         <h1>SOBRE MIM</h1>
                     </div>
@@ -158,19 +179,25 @@ export default function Sobre() {
 
                     <div className="avatarAbout">
                         <img src={"/img/about.jpeg"} alt="avatar"/>
+                        <div className="backgroundAvatar"></div>
                     </div>
 
                     <div className="bodyAboutDescription">
-                        <h1>QUEM É A MAYUMI?</h1>
+                     
+                        <h1>O QUE É A LOJINHA?</h1>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                             It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
                             It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
                             with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    
                     </div>
+                    
                 </div>
                 </div>
+
+                
             </ContainerAbout>
 
             <FooterAbout/>
