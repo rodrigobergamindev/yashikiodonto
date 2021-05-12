@@ -4,11 +4,23 @@ import Image from 'next/image';
 
 
 const Nav = styled.nav`
+
+z-index: 9999; 
+position: fixed; 
+left: 0; 
+top: 0;
+width: 100%;
+
+
+
+
+
   height: 55px;
   border-bottom: 2px solid #f1f1f1;
   display: flex;
   justify-content: space-between;
   align-items:center;
+  background-color: white;
   
   .logo {
     flex: 1;
