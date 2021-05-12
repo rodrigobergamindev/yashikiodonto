@@ -39,7 +39,7 @@ const ContentProduct = styled.div`
 
 const ContainerDesc = styled.div`
         width: 600px;
-        height: 350px;
+        height: 450px;
         display:flex;
         align-items: flex-start;
         flex-flow: column nowrap;
@@ -51,7 +51,7 @@ const ContainerAvatar = styled.div`
 
       
         width: 450px;
-        height: 350px;
+        height: 450px;
         display:flex;
         align-items: center;
         justify-content: center;
@@ -66,18 +66,6 @@ const ImgAvatar = styled.img`
         height: 300px;
         z-index:1;
 `
-
-const BackgroundImageProduct = styled.div`
-        width: 390px;
-        height: 350px;
-        position: absolute;
-        margin-top: 20px;
-        margin-left: 10px;
-
-        background-color: #fc5c65;
-
-`
-
 
 const BarDesc = styled.div`
         width: 100px;
@@ -99,10 +87,21 @@ const Description = styled.div`
             
         }
 
+
+
+
         p {
             color:#fc5c65;
             font-size: 1.2em;
-            line-height: 1.5em;
+            line-height: 1.3em;
+            text-align: justify;
+
+            ul {
+                list-style-type: square;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                margin-left: 2rem;
+            }
         }
 
         button {
@@ -147,9 +146,9 @@ export default function Pagamento() {
                             <Description>
                             <h1>COMO FAZER MEU PEDIDO?</h1>
 
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <p>Prezamos muito pela sua experiência, por isso prestamos um atendimento personalizado e individual para cada cliente,
+                                entendemos que cada uma de vocês pensa de uma forma diferente e por isso estamos a sua disposição para te ajudar no processo de escolha das peças.
+                            </p>
 
                             <button>Faça seu Pedido</button>
                             </Description>        
@@ -174,9 +173,20 @@ export default function Pagamento() {
                             <Description>
                             <h1>FORMAS DE PAGAMENTO</h1>
 
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <p>Trabalhamos com as seguintes formas de pagamento:
+
+                            <ul>
+                                <li>Boleto (à vista ou parcelado)</li>
+                                <li>Cartão de Crédito</li>
+                                <li>Pix</li>
+                                <li>Transferência Bancária</li>
+                                <li>PicPay</li>
+                                <li>PayPal</li>
+                            </ul>
+
+                            </p>
+
+                            
 
                             <button>Dúvidas</button>
                             </Description>        
@@ -199,9 +209,9 @@ export default function Pagamento() {
                             <Description>
                             <h1>AGORA É COM A GENTE!</h1>
 
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <p>Se você já confirmou seu pedido e realizou o pagamento, pode ficar tranquila! Agora seu pedido será separado e enviado, o que pode levar
+                                até um dia útil a depender do horário do pedido, para pedidos feitos aos domingos, serão enviados na segunda. Caso queira rastrear seu pedido,
+                                é só me chamar!</p>
 
                             <button>Onde está meu pedido?</button>
                             </Description>        
