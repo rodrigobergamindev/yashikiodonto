@@ -71,11 +71,10 @@ const BarDesc = styled.div`
         width: 100px;
         height: 10px;
         background: #fc5c65;
-        margin-bottom: 1rem;
 `
 
 const Description = styled.div`
-        height:100%;
+        height:300px;
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-between;
@@ -98,9 +97,7 @@ const Description = styled.div`
 
             ul {
                 list-style-type: square;
-                margin-top: 1rem;
-                margin-bottom: 1rem;
-                margin-left: 2rem;
+                padding: 2rem;
             }
         }
 
