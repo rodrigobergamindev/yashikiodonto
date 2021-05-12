@@ -28,7 +28,7 @@ const SecondContent = styled.section`
     background-image: url(${props => props.background || "red"});
 
     background-size: cover;
-    transition: 0.6s ease-in-out;
+    transition: 0.6s ease;
 
     .miniContainer{
         width: 1200px;
