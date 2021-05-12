@@ -24,9 +24,11 @@ const Nav = styled.nav`
       padding: 12px;
       color: #121214;
       font-size: 1.3em;
+      transition: 0.3s ease;
 
       &:hover{
         color: #e74c3c;
+        transition: 0.3s ease;
       }
     }
 

@@ -12,10 +12,6 @@ export const MenuItems = [
         url: 'Produtos',
     },
     {
-        title: 'Contato',
-        url: 'Contato',
-    },
-    {
         title: 'Pagamento',
         url: 'Pagamento',
     }

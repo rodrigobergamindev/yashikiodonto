@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const StyledFooter = styled.footer`
 
-    height: 35vh;
+
     background-color:#fc5c65;
 
     display:flex;
@@ -16,6 +16,7 @@ const StyledFooter = styled.footer`
 
 
     .containerFooter {
+        margin-top: 2rem;
         display:flex;
         align-items: flex-start;
         justify-content: center;

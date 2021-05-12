@@ -1,6 +1,6 @@
 import Navbar from '../components/Navbar/Navbar'
 import styled from 'styled-components';
-import FooterAbout from '../components/Footer/FooterAbout';
+import Footer from '../components/Footer/Footer';
 
 
 const ContainerAbout = styled.section`
@@ -200,7 +200,7 @@ export default function Sobre() {
                 
             </ContainerAbout>
 
-            <FooterAbout/>
+            <Footer/>
         </div>
     )
 }
