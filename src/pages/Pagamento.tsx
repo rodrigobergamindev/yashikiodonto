@@ -102,7 +102,7 @@ const Description = styled.div`
         }
 
         button {
-            max-width:200px;
+            width:200px;
             border: none;
             padding:10px;
             background-color: #dfe6e9;
