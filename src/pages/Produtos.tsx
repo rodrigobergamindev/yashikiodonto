@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Footer from "../components/Footer/Footer";
 
 const ContainerProduct = styled.div`
-
+        margin-top: 4rem;
         width: 100%;
         display:flex;
         align-items: center;
@@ -31,7 +31,7 @@ const ContentProduct = styled.div`
         padding: 2rem;
         display:flex;
         align-items: flex-start;
-        margin-bottom: 3rem;
+        margin-bottom: 5rem;
         justify-content: space-between;
 
 `
@@ -224,6 +224,7 @@ export default function Produtos() {
 
 
 
+
                     <ContentProduct>
 
                         <ContainerAvatar>
@@ -277,6 +278,32 @@ export default function Produtos() {
 
 
                     </ContentProduct>
+
+                    <ContentProduct>
+
+                        <ContainerAvatar>
+                            <ImgAvatar src={'/img/catalogs/argolas.jpeg'}/>
+                            <BackgroundImageProduct/>
+                        </ContainerAvatar>
+
+                        <ContainerDesc>
+
+                        <BarDesc></BarDesc>
+
+                            <Description>
+                            <h1>Argolas</h1>
+
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+                            <button>Consulte o catálogo</button>
+                            </Description>        
+
+                        </ContainerDesc>
+
+
+                        </ContentProduct>
 
                 </ContainerContent>
                 
