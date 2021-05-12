@@ -31,7 +31,7 @@ const ContentProduct = styled.div`
         padding: 2rem;
         display:flex;
         align-items: flex-start;
-        margin-bottom: 3rem;
+   
         justify-content: space-between;
 
 `
