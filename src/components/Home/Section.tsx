@@ -11,7 +11,7 @@ const Container = styled.section`
     justify-content: center;
     align-items: center;
 
-
+    margin-top: 4rem;
 
 `
 
