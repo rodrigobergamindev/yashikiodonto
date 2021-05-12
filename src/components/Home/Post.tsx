@@ -22,9 +22,12 @@ const Card = styled.div`
     img {
         width: 250px;
         height: 250px;
+        transition: all 0.3s ease;
 
         &:hover {
-            filter: brightness(65%);
+            transform: scale(1.1);
+            transition: all 0.3s ease;
+            box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
         }
     }
 

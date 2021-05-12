@@ -6,12 +6,11 @@ import styled from 'styled-components';
 const StyledFooter = styled.footer`
 
     height: 35vh;
-    background-color:#fc5c65;
 
     display:flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #fc5c65;
     border-top: 2px solid #f1f1f1;
 
 
@@ -72,7 +71,7 @@ const StyledFooter = styled.footer`
     
 `
 
-export default function Footer() {
+export default function FooterAbout() {
     return (
         <StyledFooter>
             <div className="containerFooter">

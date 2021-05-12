@@ -17,14 +17,16 @@ const Ul = styled.ul`
       color: #fc5c65;
       padding: 0.7rem;
 
-      &:hover{
-        border-bottom: 1px solid #fc5c65;
         
     }
   
       a{ 
-          padding: 5px;
+          padding: 10px;
           font-size: 1.2em;
+
+          &:hover{
+            
+            border-bottom: 2px solid #fc5c65;
       }
   }
 

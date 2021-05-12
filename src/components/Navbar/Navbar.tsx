@@ -53,7 +53,9 @@ const SocialMediaList = styled.ul`
           img {
             width: 20px;
             height: 20px;
-
+            transform: scale(1.0);
+            transition: all 0.3s ease;
+            
             &:hover  {
               transform: scale(1.5);
               transition: all 0.3s ease;
