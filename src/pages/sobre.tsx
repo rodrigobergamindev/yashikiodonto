@@ -168,9 +168,10 @@ export default function Sobre() {
                     </div>
 
                     <div className="descriptionAbout">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <p>Meu nome é Beatriz Mayumi Yashiki, tenho 24 anos e sou proprietária da Lojinha da Mayumi. Assim como vocês, 
+                            sou apaixonada em acessórios, pulseiras, berloques, argolas e tudo o que você vai encontrar por aqui.
+                            Meu maior objetivo é oferecer a você um produto de excelente qualidade e prestar o melhor atendimento possível, para que você se sinta em casa.
+                        </p>
                     </div>
                 </div>
 
@@ -185,13 +186,12 @@ export default function Sobre() {
                     <div className="bodyAboutDescription">
                      
                         <h1>O QUE É A LOJINHA?</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
-                            with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-    
+                        <p>Desde sempre fui apaixonada por empreender, a Lojinha da Mayumi surgiu quando decidi unir minha paixão por acessórios femininos a
+                            minha outra paixão que é vender. Como consumidora o atendimento conta muito e por isso prestamos a você um atendimento personalizado e individual de acordo com o seu gosto!
+                        </p>
+                        <p>Somos colecionadores de momentos, e portanto, transformamos esses momentos em pulseiras recheadas de amor e significado. Trabalhamos com as melhores peças do mercado e com uma variedade ampla
+                            de produtos, além do atendimento, temos um compromisso com a qualidade do que vendemos.
+                        </p>
                     </div>
                     
                 </div>

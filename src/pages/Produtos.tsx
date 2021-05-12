@@ -154,9 +154,9 @@ export default function Produtos() {
                             <Description>
                             <h1>Berloques Envernizados</h1>
 
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <p>Peças compostas por diferentes ligas metálicas, envernizadas e com banho nacional, ampla variedade de berloques e separadores. Os berloques passam por um banho de verniz que prologam o brilho e se tornam
+                                mais resistentes a corrosão.
+                            </p>
 
                             <a href="https://drive.google.com/file/d/1DdEQARLv6uqQQJPGncpHA_7Y_PupTPgf/view?usp=sharing" target="_blank"><button>Consulte o catálogo</button></a>
                             </Description>        
@@ -182,9 +182,8 @@ export default function Produtos() {
                             <Description>
                             <h1>Berloques Banhados</h1>
 
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <p>Peças banhadas a cinquenta milésimos de prata, possuem um brilho atenuado. Catálogo com ampla variedade de berloques, separadores e muranos.
+                            </p>
 
                             <a href="https://drive.google.com/file/d/1RpPC1TR_Dq99QCyPf8Bb2MYouXXlsLzm/view?usp=sharing" target="_blank"><button>Consulte o catálogo</button></a>
                             </Description>        
@@ -210,9 +209,9 @@ export default function Produtos() {
                             <Description>
                             <h1>Berloques em Níquel</h1>
 
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <p>Berloques e separadores em níquel hipoalergênicos, ideal para quem possui a pele sensível e com alergia a diferentes compostos de metais ou a níquel. 
+                                Ampla variedade de produtos com diferentes separadores e berloques. 
+                            </p>
 
                             <a href="https://drive.google.com/file/d/1He2SG7yrH_APBWKfLQ8sbp46nitvbY5T/view?usp=sharing" target="_blank"><button>Consulte o catálogo</button></a>
                             </Description>        
@@ -239,9 +238,9 @@ export default function Produtos() {
                             <Description>
                             <h1>Pulseiras, Braceletes e Travas</h1>
 
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <p>Pulseiras de diferentes tipos e fechos, com opções banhadas a prata e envernizadas, além de ampla variedade de pulseiras possuimos também braceletes e travas de segurança
+                                que servem para evitar que os berloques caiam.
+                            </p>
 
                             <a href="https://drive.google.com/file/d/1Au_1vcOvM_DSm686KKpyBsvuuAg93qyY/view?usp=sharing" target="_blank"><button>Consulte o catálogo</button></a>
                             </Description>        
@@ -267,9 +266,7 @@ export default function Produtos() {
                             <Description>
                             <h1>Muranos</h1>
 
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <p>Muranos em níquel, banhados a prata e envernizados com muitas opções de cores e formatos variados.</p>
 
                             <a href="https://drive.google.com/file/d/1WEDmwG9UwfQn3B5OJb8X6gKewbQ08W-v/view?usp=sharing" target="_blank"><button>Consulte o catálogo</button></a>
                             </Description>        
@@ -293,9 +290,7 @@ export default function Produtos() {
                             <Description>
                             <h1>Argolas</h1>
 
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <p>Argolinhas folheadas e com zircônia para todos os gostos, consulte a disponibilidade das peças.</p>
 
                             <a href="https://drive.google.com/file/d/14Qts8zYV_0S_lbeXEzH02PD1iXfdXQZm/view?usp=sharing" target="_blank"><button>Consulte o catálogo</button></a>
                             </Description>        

@@ -146,9 +146,9 @@ export function Section() {
                 <div className="description">
                     <h1>Transformamos sua história em uma pulseira</h1>
                     <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled 
-                        it to make a type specimen book. It has survived not only five centuries.</p>
+                        
+                        Quando pensamos na nossa história de vida, nos remetemos a situações, pessoas, coisas que participaram do processo construtivo da nossa memória.
+                        Nossa missão é unir esses fragmentos de memória em uma pulseira linda e cheia de amor.</p>
                      <a href="/Produtos"><button>Consulte nossos catálogos</button></a>    
                 </div>
                     <img src="/img/content.jpeg"/>
