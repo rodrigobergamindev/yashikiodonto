@@ -14,7 +14,7 @@ const Body = styled.div`
       
       @media (max-width: 931px) {
         flex-flow: column wrap;
-        
+        padding: 0;
       }
 `
 
