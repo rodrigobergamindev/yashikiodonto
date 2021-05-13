@@ -71,6 +71,7 @@ const BarDesc = styled.div`
         width: 100px;
         height: 10px;
         background: #fc5c65;
+        margin-bottom: 1rem;
 `
 
 const Description = styled.div`
@@ -81,8 +82,6 @@ const Description = styled.div`
                 
         h1 {
             font-size: 2em;
-            font-weight: 400;
-            
             
         }
 
@@ -90,7 +89,7 @@ const Description = styled.div`
 
 
         p {
-            color:#fc5c65;
+           
             font-size: 1.2em;
             line-height: 1.3em;
             text-align: justify;
