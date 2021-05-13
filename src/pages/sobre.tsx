@@ -12,6 +12,10 @@ const ContainerAbout = styled.section`
 
     margin-top: 5rem;
 
+    @media (max-width: 768px) {
+            display: none;
+      }
+
     .headerAbout {
         height:30vh;
         
@@ -148,11 +152,34 @@ const ContainerAbout = styled.section`
     }
 `
 
+const ContainerAboutMobile = styled.div`
+
+    display: none;
+    @media (max-width: 768px) {
+        height: 100vh;
+        display: flex;
+        
+
+        .headerAbout {
+            display: flex;
+            flex-flow: column wrap;
+           
+        }
+}
+
+
+
+
+`
 
 export default function Sobre() {
     return (
         <div>
             <Navbar/>
+
+            <ContainerAboutMobile>
+               <h1>HELLO</h1>
+            </ContainerAboutMobile>
 
             <ContainerAbout>
                 <div className="headerAbout">

@@ -32,7 +32,7 @@ const SecondContent = styled.section`
 
 
     @media (max-width: 931px) {
-      height: 32vh;
+      height: 30vh;
       background-size:100% 100%;
       background-repeat: no-repeat;
 
