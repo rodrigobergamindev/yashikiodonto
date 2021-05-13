@@ -64,7 +64,7 @@ const ImgAvatar = styled.img`
         height: 350px;
         z-index:1;
 
-        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+      
         border-radius: 3px;
         transition: all 0.3s ease;
         transform: scale(1.0);
@@ -101,13 +101,13 @@ const Description = styled.div`
                 
         h1 {
             font-size: 2.2em;
-            font-weight: 400;
+            
             
             
         }
 
         p {
-            color:#fc5c65;
+            
             font-size: 1.2em;
             line-height: 1.5em;
         }
