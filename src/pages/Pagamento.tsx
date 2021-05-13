@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar/Navbar";
 import styled from 'styled-components';
 import Footer from "../components/Footer/Footer";
+import Head from 'next/head'
 
 const ContainerProduct = styled.div`
         margin-top: 4rem;
@@ -169,6 +170,10 @@ const Description = styled.div`
 export default function Pagamento() {
     return (
         <div>
+            <Head>
+            <title>Pagamentos</title>
+            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            </Head>
            <Navbar/>
            <ContainerProduct>
 

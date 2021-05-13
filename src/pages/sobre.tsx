@@ -2,7 +2,7 @@ import Navbar from '../components/Navbar/Navbar'
 import styled from 'styled-components';
 import Footer from '../components/Footer/Footer';
 import React from 'react';
-
+import Head from 'next/head'
 
 const ContainerAbout = styled.section`
     display: flex;
@@ -233,6 +233,10 @@ const BodyDescription = styled.div`
 export default function Sobre() {
     return (
         <div>
+            <Head>
+            <title>Sobre</title>
+            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            </Head>
             <Navbar/>
 
             <ContainerMobile>
