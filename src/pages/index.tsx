@@ -25,6 +25,7 @@ export default function Home() {
     <Body>
       <Navbar/>
       <Section/>
+      <Footer/>
       </Body>
   )
 }
