@@ -15,14 +15,20 @@ const StyledFooter = styled.footer`
     border-top: 2px solid #f1f1f1;
     margin-top: 5rem;
 
+
     .containerFooter {
         margin-top: 2rem;
         display:flex;
         align-items: flex-start;
         justify-content: center;
-        flex-flow: column nowrap;
+        flex-flow: column wrap;
         width: 1200px;
-       
+        
+
+        @media (max-width: 931px) {
+            flex-flow: column wrap;
+            max-width: 340px;
+          }
 
 
         .titleFooter {
@@ -31,9 +37,18 @@ const StyledFooter = styled.footer`
                 font-size: 1.2em;
                 font-weight: 400;
                 line-height:1.2em;
+
+                @media (max-width: 931px) {
+                    padding: 0.6rem;
+                  }
+
             }
+
             h4 {
                 font-weight: 400;
+                @media (max-width: 931px) {
+                    padding: 0.6rem;
+                  }
             }
         }
     
@@ -46,12 +61,25 @@ const StyledFooter = styled.footer`
             flex-flow: row nowrap;
             align-items: flex-start;
             justify-content: space-between;
+          
+
+            @media (max-width: 931px) {
+                flex-flow: row wrap;
+                justify-content: space-between;
+              }
 
             .columnFooter {
                 display:flex;
                 flex-flow: column nowrap;
                 align-items: flex-start;
                 justify-content: flex-start;
+
+                @media (max-width: 931px) {
+                    flex-flow: column wrap;
+                    padding: 0.6rem;
+                  }
+           
+                
 
                 p {
                     width: 180px;
@@ -63,6 +91,8 @@ const StyledFooter = styled.footer`
                     display:flex;
                     flex-flow: column nowrap;
                     justify-content: space-between;
+                    
+                  
 
                 }
             }
