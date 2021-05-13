@@ -8,7 +8,7 @@ const ContainerAbout = styled.section`
     flex-flow: column nowrap;
     width: 100%;
     align-items: center;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 
     margin-top: 5rem;
 
