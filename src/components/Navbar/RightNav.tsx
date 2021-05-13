@@ -41,11 +41,14 @@ const Ul = styled.ul`
     background-color: white;
     color: #FC5C65;
     position: fixed;
-    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
-    top: 55px;
+    transform: ${({ open }) => open ? 'translateY(0)' : 'translateY(-150%)'};
+    top: ${({ open }) => open ? '55px' : '10px'};
     right: 0;
     width: 100%;
+    height: 100vh;
     transition: transform 0.3s ease-in-out;
+
+
 
     li {
       padding: 0.7rem;
@@ -53,7 +56,7 @@ const Ul = styled.ul`
       text-align: center;
       
       a {
-        font-size: 1.5em;
+        font-size: 2em;
       }
 
     }
