@@ -24,15 +24,27 @@ const SecondContent = styled.section`
     width:100%;
    
 
-    height:100vh;
-    background-image: url(${props => props.background || "red"});
+    height:70vh;
+    background-image: url(${props => props.background || "white"});
 
     background-size: cover;
     transition: 0.6s ease;
 
+
+    @media (max-width: 931px) {
+      height: 30vh;
+      background-size:100% 100%;
+      background-repeat: no-repeat;
+
+      }
+
+
+
     .miniContainer{
         width: 1200px;
-        
+        @media (max-width: 931px) {
+            display: none;
+          }
         
 
         div {
@@ -111,6 +123,92 @@ const SecondContent = styled.section`
             }
         }
     }
+    
+`
+
+const ContainerMobile = styled.div`
+
+    display: none;
+    max-width: 100%;
+  
+    
+    @media (max-width: 931px) {
+        display: flex;
+      }
+
+    div {
+        display:flex;
+        flex-flow: column nowrap;
+        background-color:#fc5c65;
+        align-items: flex-start;
+        opacity: 0.92;
+        z-index: 1;
+
+
+
+        ul{
+            margin-top: 1rem;
+            display:flex;
+            flex-flow: row nowrap;
+            list-style: none;
+            justify-content: space-around;
+            width: 100%;
+            border-bottom: 2px solid white;
+
+            li {
+                font-size: 1.4em;
+                cursor: pointer;
+                height:60px;
+                text-align: center;
+                display:flex;
+                flex-flow: column nowrap;
+                color: white;
+                }
+
+            }
+        }
+
+    }
+
+    .description {
+        display: flex;
+        flex-flow: column nowrap;
+        max-width: 600px;
+        padding: 2rem;
+        justify-content: space-between;
+       
+
+        h1 {
+            color: white;
+            margin-bottom: 1rem;
+            font-size: 2.2em;
+            line-height: 0.9em;
+            
+
+        }
+
+        p{  
+            color: white;
+            font-size: 1.2em;
+            text-align: left;
+            line-height: 1.2em;
+            margin-bottom: 2rem;
+        }
+
+        button {
+            max-width:200px;
+            border: none;
+            padding:10px;
+            background-color: #dfe6e9;
+            color: black;
+            cursor: pointer;   
+            font-size: 1.04em;
+            opacity: 1; 
+            border-radius: 2px;
+        }
+    }
+
+
 
 `
 
@@ -122,8 +220,39 @@ export function Slider() {
     const[subtitle, setSubtitle] = useState(initialState.subtitle)
 
     return (
-    
+            <div style={{width:"100%"}}>
+
+            <ContainerMobile>
+                <div>
+
+                    <ul>
+                    {SliderItems.map((item, index) => {
+                    return (
+                        <li key={index} style={{borderBottom: item.url === background? '4px solid white' : 'none'}} onClick={() => {
+                            setBackground(item.url)
+                            setDescription(item.description)
+                            setSubtitle(item.subtitle)
+                        }}>
+                            {item.title}
+                            <div/>
+                            </li>
+                    )
+                    })}
+                    </ul>
+
+                    <div className="description">
+                    <h1>{subtitle}</h1>
+                    <p>{description}</p>
+                    <a href="https://api.whatsapp.com/send?phone=551129639226&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20as%20pe%C3%A7as%20da%20loja" target="_blank">
+                        <button>Faça seu pedido</button></a>
+                       
+                </div>
+                </div>
+                </ContainerMobile>
+
+            
             <SecondContent background={background}>
+
                 <div className="miniContainer">
                 <div>
 
@@ -152,6 +281,6 @@ export function Slider() {
                 </div>
                 </div>
             </SecondContent>
-       
+            </div>
     )
 }

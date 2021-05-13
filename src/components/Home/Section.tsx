@@ -15,7 +15,7 @@ const Container = styled.section`
 
     @media (max-width: 931px) {
         flex-flow: column wrap;
-        max-width: 340px;
+        max-width: 100%;
         align-self: center;
       }
 `
