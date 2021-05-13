@@ -87,7 +87,7 @@ const FirstContent = styled.section`
 
             @media (max-width: 931px) {
                 max-width: 340px;
-                font-size: 1.8em;
+                font-size: 2em;
                 color: #fc5c65;
               }
 
@@ -151,13 +151,14 @@ const DisplaySocialMedia = styled.div`
     align-items: center;
     width:1200px;
     margin-bottom: 2rem;
-
+    
   
 
     @media (max-width: 931px) {
         flex-flow: column wrap;
         max-width: 340px;
-        
+        margin-top: 2rem;
+        margin-bottom: 0;
       }
 
     button {
@@ -189,23 +190,40 @@ const DisplaySocialMedia = styled.div`
         align-items: flex-start;
         justify-self: flex-start;
         width: 100%;
-
+        
         @media (max-width: 931px) {
             flex-flow: column wrap;
             padding: 0;
             margin: 0;
+            justify-content: center;
+            align-items: center;
+            
           }
        
         
 
         p {
-            line-height:0.9em;
+            line-height:1.2em;
             font-size: 1.2em;
+
+            @media (max-width: 931px) {
+                
+                padding: 1rem;
+                text-align: center;
+                margin-bottom: 1rem;
+                
+              }
         }
 
         h1 {
             font-size:2.5em; 
             font-weight: 400;
+            
+            @media (max-width: 931px) {
+                font-size: 2.2em;
+                font-weight: bold;
+                color: #fc5c65;
+              }
         }
         
 
