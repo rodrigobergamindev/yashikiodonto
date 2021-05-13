@@ -13,7 +13,7 @@ const StyledFooter = styled.footer`
     justify-content: center;
     color: white;
     border-top: 2px solid #f1f1f1;
-
+    margin-top: 5rem;
 
     .containerFooter {
         margin-top: 2rem;
