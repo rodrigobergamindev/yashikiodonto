@@ -9,6 +9,7 @@ const ContainerAbout = styled.section`
     flex-flow: column nowrap;
     width: 100%;
     align-items: center;
+    margin-bottom: 10rem;
 
     @media (max-width: 931px) {
         display:none;
