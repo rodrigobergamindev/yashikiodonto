@@ -8,7 +8,7 @@ const ContainerAbout = styled.section`
     flex-flow: column nowrap;
     width: 100%;
     align-items: center;
-    margin-bottom: 2rem;
+
 
     margin-top: 5rem;
 
@@ -72,9 +72,6 @@ const ContainerAbout = styled.section`
         align-items: center;
         justify-content: center;
 
-        .containerDesc {
-
-        }
 
         .containerBodyAbout {
             width: 1200px;
