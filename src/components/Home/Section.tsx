@@ -33,7 +33,7 @@ const FirstContent = styled.section`
     @media (max-width: 931px) {
         flex-flow: column wrap;
         max-width: 340px;
-        padding: 0;
+        padding: 2rem;
       }
    
     .description {
@@ -182,8 +182,8 @@ export function Section() {
                     <h1>Transformamos sua história em uma pulseira</h1>
                     <p>
                         
-                        Quando pensamos na nossa história de vida, nos remetemos a situações, pessoas, coisas que participaram do processo construtivo da nossa memória.
-                        Nossa missão é unir esses fragmentos de memória em uma pulseira linda e cheia de amor.</p>
+                        Quando pensamos na nossa história de vida, nos remetemos a situações, pessoas, coisas que participaram desse processo.
+                        Nossa missão é moldar a sua história em uma pulseira linda e cheia amor.</p>
                      <a href="/Produtos"><button>Consulte nossos catálogos</button></a>    
                 </div>
                     <img src="/img/content.jpeg"/>
