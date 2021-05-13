@@ -1,6 +1,7 @@
 import Navbar from '../components/Navbar/Navbar'
 import styled from 'styled-components';
 import Footer from '../components/Footer/Footer';
+import React from 'react';
 
 
 const ContainerAbout = styled.section`
@@ -9,12 +10,11 @@ const ContainerAbout = styled.section`
     width: 100%;
     align-items: center;
 
+    @media (max-width: 931px) {
+        display:none;
+      }
 
     margin-top: 5rem;
-
-    @media (max-width: 768px) {
-            display: none;
-      }
 
     .headerAbout {
         height:30vh;
@@ -152,22 +152,79 @@ const ContainerAbout = styled.section`
     }
 `
 
-const ContainerAboutMobile = styled.div`
 
-    display: none;
-    @media (max-width: 768px) {
-        height: 100vh;
+const ContainerMobile = styled.section`
+    
+    display:none;
+    @media (max-width: 931px) {
+        display:flex;
+        margin-top: 3rem;
+        padding: 2rem;
+        flex-flow: column wrap;
+        
+      }
+
+    
+`
+
+const HeaderAbout = styled.div`
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    
+   
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+
+
+`
+
+const BarAbout = styled.div`
+      width: 100px;
+      height: 10px;
+      background-color:#fc5c65;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+`
+
+
+const BodyAbout = styled.div`
+
         display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+
         
 
-        .headerAbout {
-            display: flex;
-            flex-flow: column wrap;
-           
+`
+
+
+const BodyDescription = styled.div`
+
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        margin-top: 1rem;
+
+        h1 {
+            font-size: 2em;
+            color: #fc5c65;
         }
-}
 
+        p{
+            text-align: justify;
+        }
 
+        img {
+            max-width: 100%;
+        }
 
 
 `
@@ -177,10 +234,36 @@ export default function Sobre() {
         <div>
             <Navbar/>
 
-            <ContainerAboutMobile>
-               <h1>HELLO</h1>
-            </ContainerAboutMobile>
+            <ContainerMobile>
+                <HeaderAbout>
+                    <BarAbout/>
+                    <h1>SOBRE MIM</h1>
+                    <p>Meu nome é Beatriz Mayumi Yashiki, tenho 24 anos e sou proprietária da Lojinha da Mayumi. Assim como vocês, 
+                            sou apaixonada em acessórios, pulseiras, berloques, argolas e tudo o que você vai encontrar por aqui.
+                            Meu maior objetivo é oferecer a você um produto de excelente qualidade e prestar o melhor atendimento possível, para que você se sinta em casa.
+                    </p>
+                </HeaderAbout>
 
+                <BodyAbout>
+                
+                
+                <BodyDescription>
+
+                    <img src={"/img/aboutmobile.jpeg"} alt="avatar"/>
+
+                    <BarAbout/>
+                    <h1>O QUE É A LOJINHA?</h1>
+
+                    <p>Desde sempre fui apaixonada por empreender, a Lojinha da Mayumi surgiu quando decidi unir minha paixão por acessórios femininos a
+                            minha outra paixão que é vender. Como consumidora o atendimento conta muito e por isso prestamos a você um atendimento personalizado e individual de acordo com o seu gosto!
+                        </p>
+                        <p>Somos colecionadores de momentos, e portanto, transformamos esses momentos em pulseiras recheadas de amor e significado. Trabalhamos com as melhores peças do mercado e com uma variedade ampla
+                            de produtos, além do atendimento, temos um compromisso com a qualidade do que vendemos.
+                        </p>
+                    
+                </BodyDescription>
+                </BodyAbout>
+            </ContainerMobile>
             <ContainerAbout>
                 <div className="headerAbout">
 
