@@ -42,14 +42,19 @@ const Ul = styled.ul`
     color: #FC5C65;
     position: fixed;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
-    top: 60px;
+    top: 55px;
     right: 0;
-    width: 340px;
+    width: 100%;
     transition: transform 0.3s ease-in-out;
 
     li {
       padding: 0.7rem;
       width: 100%;
+      text-align: center;
+      
+      a {
+        font-size: 1.5em;
+      }
 
     }
   }

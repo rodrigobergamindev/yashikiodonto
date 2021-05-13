@@ -7,12 +7,17 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 
 const Container = styled.section`
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
-
     margin-top: 4rem;
+   
 
+    @media (max-width: 931px) {
+        flex-flow: column wrap;
+        max-width: 340px;
+        align-self: center;
+      }
 `
 
 
@@ -22,21 +27,32 @@ const FirstContent = styled.section`
     align-items:center;
     justify-content: space-around;
     padding: 4rem;
-    width:1200px;
 
 
 
-
+    @media (max-width: 931px) {
+        flex-flow: column wrap;
+        max-width: 340px;
+        padding: 0;
+      }
+   
     .description {
         
         margin-right: 3rem;
-        max-height:350px;
+       
         max-width: 600px;
         display: flex;
         flex-flow: column nowrap;
         max-width: 600px;
         padding: 1rem;
         justify-content: space-between;
+
+        @media (max-width: 931px) {
+            flex-flow: column wrap;
+            max-width: 340px;
+            padding: 0;
+          }
+       
       
             
         h1 {
@@ -79,6 +95,11 @@ const FirstContent = styled.section`
     img {
         max-width: 600px;
         max-height: 350px;
+
+        @media (max-width: 931px) {
+            max-width: 90%;
+            max-height: 90%;
+          }
     }
 `
 
@@ -89,6 +110,14 @@ const DisplaySocialMedia = styled.div`
     align-items: center;
     width:1200px;
     margin-bottom: 2rem;
+
+  
+
+    @media (max-width: 931px) {
+        flex-flow: column wrap;
+        max-width: 340px;
+        
+      }
 
     button {
         margin-top: 2rem;    
@@ -120,6 +149,12 @@ const DisplaySocialMedia = styled.div`
         justify-self: flex-start;
         width: 100%;
 
+        @media (max-width: 931px) {
+            flex-flow: column wrap;
+            padding: 0;
+            margin: 0;
+          }
+       
         
 
         p {
@@ -154,22 +189,20 @@ export function Section() {
                     <img src="/img/content.jpeg"/>
 
             </FirstContent>
-
             <Slider/>
         
-           <DisplaySocialMedia>
+            <DisplaySocialMedia>
 
-            <div className="title">
-                <h1>Visite nosso Instagram</h1>
-                <p>Fique por dentro das nossas novidades, em primeira mão sempre no nosso feed!</p>
-            </div>
+                    <div className="title">
+                        <h1>Visite nosso Instagram</h1>
+                        <p>Fique por dentro das nossas novidades, em primeira mão sempre no nosso feed!</p>
+                    </div>
 
-            <InstagramFeed></InstagramFeed>
+                    <InstagramFeed></InstagramFeed>
 
-            <a href="https://www.instagram.com/lojinha_da_mayumi/" target="_blank"><button><InstagramIcon style={{color:"white", fontSize:"0.95em", marginTop:'2px', marginRight:'2px'}}></InstagramIcon>@lojinha_da_mayumi</button></a>
+                    <a href="https://www.instagram.com/lojinha_da_mayumi/" target="_blank"><button><InstagramIcon style={{color:"white", fontSize:"0.95em", marginTop:'2px', marginRight:'2px'}}></InstagramIcon>@lojinha_da_mayumi</button></a>
 
-           </DisplaySocialMedia>
-
+            </DisplaySocialMedia>
         </Container>
     )
 }

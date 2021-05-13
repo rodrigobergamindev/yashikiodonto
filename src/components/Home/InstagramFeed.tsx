@@ -13,6 +13,7 @@ const StyledFeed = styled.div`
     justify-content: center;
 
 
+
 `
 
 

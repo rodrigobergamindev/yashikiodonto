@@ -9,7 +9,13 @@ import Footer from '../components/Footer/Footer';
 const Body = styled.div`
       display: flex;
       flex-flow: column nowrap; 
-  
+      align-self: center;
+      justify-self: center;
+      
+      @media (max-width: 931px) {
+        flex-flow: column wrap;
+        
+      }
 `
 
 
@@ -19,7 +25,6 @@ export default function Home() {
     <Body>
       <Navbar/>
       <Section/>
-      <Footer/>
       </Body>
   )
 }
