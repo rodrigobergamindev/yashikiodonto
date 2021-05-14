@@ -146,17 +146,6 @@ export default function Footer() {
                 </div>
 
                 <div className="columnFooter">
-                    <h3>Formas de Pagamento</h3>
-
-                    <ul>
-                        <li>Pix</li>
-                        <li>Cartão de Crédito</li>
-                        <li>Transferência Bancária</li>
-                        <li>Boleto (à vista ou parcelado)</li>
-                    </ul>
-                </div>
-
-                <div className="columnFooter">
                     <h3>Horário de Funcionamento</h3>
                     <p>24 horas por dia de Segunda a Domingo</p>
 
