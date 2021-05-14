@@ -9,7 +9,7 @@ const ContainerAbout = styled.section`
     flex-flow: column nowrap;
     width: 100%;
     align-items: center;
-    margin-bottom: 10rem;
+    margin-bottom: 14rem;
 
     @media (max-width: 931px) {
         display:none;
@@ -230,7 +230,7 @@ const BodyDescription = styled.div`
 
 `
 
-export default function Sobre() {
+export default function About() {
     return (
         <div>
             <Head>
