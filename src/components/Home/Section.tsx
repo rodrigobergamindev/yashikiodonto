@@ -239,7 +239,7 @@ export function Section() {
         <Container>
             <FirstContent>
                 <div className="description">
-                <img className="imgMobile" src="/img/content.jpeg"/>
+                <img className="imgMobile" src="/img/initial.jpg"/>
                     <h1>Transformamos sua história em uma pulseira</h1>
                     <p>
                         
@@ -248,7 +248,7 @@ export function Section() {
 
                      <a href="/Produtos"><button>Consulte nossos catálogos</button></a>    
                 </div>
-                    <img className="imgPC" src="/img/content.jpeg"/>
+                    <img className="imgPC" src="/img/initial.jpg"/>
 
             </FirstContent>
             <Slider/>

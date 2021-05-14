@@ -46,7 +46,7 @@ const SecondContent = styled.section`
 
 
     .miniContainer{
-        left: 40rem;
+        left: 10rem;
         position: absolute;
         @media (max-width: 931px) {
             display: none;
