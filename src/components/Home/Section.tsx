@@ -67,7 +67,7 @@ const FirstContent = styled.section`
             @media (max-width: 931px) {
                 display: flex;
                 width: 100%;
-                max-height: 250px;
+                max-height: 300px;
                 margin-bottom: 2rem;
               }
         }
