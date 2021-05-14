@@ -164,6 +164,11 @@ const Description = styled.div`
                 transition: 0.3s ease;
                 color: white;
             }
+
+            @media (max-width: 931px) {
+                background-color: #fc5c65;
+                color: white;
+              }
         }
 `
 

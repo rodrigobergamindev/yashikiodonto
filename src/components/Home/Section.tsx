@@ -129,7 +129,8 @@ const FirstContent = styled.section`
 
             @media (max-width: 931px) {
                 width: 340px;
-               
+                background-color: #fc5c65;
+                color: white;
               }
         }
     }

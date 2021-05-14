@@ -24,20 +24,19 @@ const SecondContent = styled.section`
     margin-bottom: 4rem;
 
     height: 100vh;
-
-    background-size: cover;
     transition: 0.6s ease;
 
     .backgroundSlider {
        
         width:100%;
         max-height: 100%;
-
+        
         img{
+            
             height: 100%;
             width: 100%;
             object-fit: cover;
-
+            
             @media (max-width: 931px) {
                 height: 250px;
               }
