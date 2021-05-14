@@ -17,31 +17,38 @@ const initialState = {
 const SecondContent = styled.section`
 
     display: flex;
-    flex-flow: row nowrap;
-    align-items:center;
+    flex-flow: column nowrap;
+    align-items:flex-start;
     justify-content: center;
-    padding: 4rem;
     width:100%;
-   
+    margin-bottom: 4rem;
 
-    height:70vh;
-    background-image: url(${props => props.background || "white"});
+    height: 100vh;
 
     background-size: cover;
     transition: 0.6s ease;
 
+    .backgroundSlider {
+       
+        width:100%;
+        max-height: 100%;
 
-    @media (max-width: 931px) {
-      height: 210px;
-      background-size:100% 100%;
-      background-repeat: no-repeat;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
 
-      }
+            @media (max-width: 931px) {
+                height: 250px;
+              }
+        }
+    }
 
 
 
     .miniContainer{
-        width: 1200px;
+        left: 40rem;
+        position: absolute;
         @media (max-width: 931px) {
             display: none;
           }
@@ -221,6 +228,7 @@ export function Slider() {
 
     return (
             <div style={{width:"100%"}}>
+            <SecondContent>
 
             <ContainerMobile>
                 <div>
@@ -250,9 +258,6 @@ export function Slider() {
                 </div>
                 </ContainerMobile>
 
-            
-            <SecondContent background={background}>
-
                 <div className="miniContainer">
                 <div>
 
@@ -279,6 +284,9 @@ export function Slider() {
                        
                 </div>
                 </div>
+                </div>
+                <div className="backgroundSlider">
+                    <img src={background}></img>
                 </div>
             </SecondContent>
             </div>
