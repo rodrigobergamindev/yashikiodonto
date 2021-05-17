@@ -20,7 +20,8 @@ export const Nav = styled.nav`
 
 .logo {
   flex:1;
-  max-height: 125px;
+  height: 10rem;
+  border: 2px solid var(--primary);
   background: var(--secondary);
   display: flex;
   align-items: center;
