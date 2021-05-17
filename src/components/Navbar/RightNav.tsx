@@ -4,10 +4,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Ul = styled.ul`
-  list-style: none;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    flex: 5;
+ 
 
 
   @media(min-width: 931px){
@@ -15,19 +17,19 @@ const Ul = styled.ul`
     
    
     li {
-      color: #fc5c65;
+      color: var(--secondary);
       padding: 0.7rem;
-
-        
     }
   
       a{ 
           padding: 10px;
-          font-size: 1.2em;
+          font-size: 0.9em;
+          letter-spacing: 0.21rem;
+          transition: 0.5s linear;
 
-          &:hover{ 
-            border-bottom: 2px solid #fc5c65;
-      }
+          &:hover {
+            color: var(--terciary);
+        }
   }
 
 
@@ -36,7 +38,6 @@ const Ul = styled.ul`
   }
   @media (max-width: 931px) {
 
-      
     flex-flow: column nowrap;
     background-color: white;
     color: #FC5C65;
@@ -57,6 +58,7 @@ const Ul = styled.ul`
       
       a {
         font-size: 2em;
+
       }
 
     }

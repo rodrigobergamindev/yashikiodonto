@@ -1,35 +1,17 @@
 
-import styled from 'styled-components';
-
-import Navbar from '../components/Navbar/Navbar'
-import { Section } from '../components/Home/Section'
-import Footer from '../components/Footer/Footer';
+import {Navbar} from '../components/Navbar/index'
 import Head from 'next/head'
+import {GlobalStyle} from  '../global'
 
-const Body = styled.div`
-      display: flex;
-      flex-flow: column nowrap; 
-      align-self: center;
-      justify-self: center;
-      
-      @media (max-width: 931px) {
-        flex-flow: column wrap;
-        padding: 0;
-      }
-`
-
-
-
-export default function Home() {
+export default function App() {
   return (
-    <Body>
+    <>
       <Head>
             <title>Início</title>
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
       <Navbar/>
-      <Section/>
-      <Footer/>
-    </Body>
+      <GlobalStyle/>
+    </>
   )
 }
