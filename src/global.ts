@@ -1,12 +1,20 @@
-import {createGlobalStyle} from 'styled-components'
+import {createGlobalStyle} from 'styled-components';
 
 
 export const GlobalStyle = createGlobalStyle `
+
+    
+    @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrJJbecmNE.woff2');
+  }
+
     :root {
         --primary: #079992;
         --secondary: #F0F2F5;
         --text: #303131;
-        --title: #079992;
         --terciary: #08F6EB;
         --background: #F0F2F5;
     }
@@ -37,6 +45,7 @@ export const GlobalStyle = createGlobalStyle `
         font-weight:400;
     }
     h1,h2,h3,h4,h5,h6,strong {
+        font-family: 'Poppins', sans-serif;
         font-weight:600;
     }
 `

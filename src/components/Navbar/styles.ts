@@ -16,12 +16,35 @@ export const Nav = styled.nav`
     justify-content: space-between;
     align-items:center;
     background: var(--primary);
+
+    button {
+      padding: 0.4rem;
+ 
+      background: var(--secondary);
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-around;
+      width: 200px;
+      border: none;
+      color: var(--primary);
+      border-radius: 4px;
+      outline: none;
+      box-shadow: none;
+      transition: 0.3s linear;
+
+      img {
+        width: 1.2rem;
+        height: 1.2rem;
+      }
+
+      &:hover {
+        filter: brightness(90%);
+      }
+    }
     
 
 .logo {
   flex:1;
-  height: 10rem;
-  border: 2px solid var(--primary);
   background: var(--secondary);
   display: flex;
   align-items: center;
@@ -69,7 +92,8 @@ export const Ul = styled.ul`
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    flex: 5;
+    justify-content: space-between;
+    flex: 3;
  
 
 

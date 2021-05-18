@@ -15,6 +15,10 @@ export const Navbar = () => {
 
       <Burger/>
 
+      
+      <button type="button"><img src="/img/socialMedia/call.png"/>AGENDAR CONSULTA</button>
+     
+
       <SocialMediaList>
       <li><a href="https://www.instagram.com/dr_edermassashi/?hl=pt-br" target="_blank"><img src="/img/socialMedia/instagram.png"/></a></li>
       <li><a href="https://www.facebook.com/lojinhadamayumi/" target="_blank"><img src="/img/socialMedia/facebook.png"/></a></li>

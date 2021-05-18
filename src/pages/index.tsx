@@ -2,6 +2,8 @@
 import {Navbar} from '../components/Navbar/index'
 import Head from 'next/head'
 import {GlobalStyle} from  '../global'
+import { Home } from '../components/Home/Home'
+import { InstagramFeed } from '../components/Home/InstagramFeed'
 
 export default function App() {
   return (
@@ -12,6 +14,7 @@ export default function App() {
             </Head>
       <Navbar/>
       <GlobalStyle/>
+      <Home/>
     </>
   )
 }
