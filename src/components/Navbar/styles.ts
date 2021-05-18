@@ -93,7 +93,7 @@ export const Ul = styled.ul`
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
-    flex: 3;
+    flex: 4;
  
 
 
