@@ -94,7 +94,7 @@ export const Ul = styled.ul`
     align-items: center;
     justify-content: space-between;
     flex: 4;
- 
+        
 
 
   @media(min-width: 931px){
@@ -108,7 +108,7 @@ export const Ul = styled.ul`
   
       a{ 
           padding: 10px;
-          font-size: 0.9em;
+          font-size: 0.8em;
           letter-spacing: 0.21rem;
           transition: 0.5s linear;
 
@@ -149,4 +149,3 @@ export const Ul = styled.ul`
     }
   }
 `;
-

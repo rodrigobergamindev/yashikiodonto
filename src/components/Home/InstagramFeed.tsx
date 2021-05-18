@@ -2,19 +2,7 @@ import {useState, useEffect} from 'react'
 import styled from 'styled-components';
 import { Post } from './Post';
 import { PostVideo } from './PostVideo';
-
-
-const StyledFeed = styled.div`
-
-    display: flex;
-    flex-flow: row wrap;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-
-
-
-`
+import { StyledFeed } from './styles'
 
 
 interface Posts {
@@ -43,7 +31,7 @@ export  function InstagramFeed() {
                    feed.map((post, index) => {
                        if(index <=7) {
                            if(post.media_type === "IMAGE") {
-                            return (
+                            return (    
                                 <Post key={post.id} post={post}/>
                                )
                            }else {

@@ -3,7 +3,9 @@ import {Navbar} from '../components/Navbar/index'
 import Head from 'next/head'
 import {GlobalStyle} from  '../global'
 import { Home } from '../components/Home/Home'
-import { InstagramFeed } from '../components/Home/InstagramFeed'
+import {Footer} from '../components/Footer/Footer'
+
+
 
 export default function App() {
   return (
@@ -15,6 +17,7 @@ export default function App() {
       <Navbar/>
       <GlobalStyle/>
       <Home/>
+      <Footer/>
     </>
   )
 }

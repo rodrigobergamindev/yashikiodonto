@@ -1,113 +1,38 @@
 import styled from 'styled-components';
 import { InstagramFeed } from './InstagramFeed';
 import { Slider } from './Slider';
-import {Container } from './styles'
+import {CardPatients} from './CardPatients'
+
+import {Container, DisplaySocialMedia, ContainerPatients } from './styles'
 import {Cards} from './Cards'
 import {Card} from './Card'
 
+import Typical from 'react-typical'
+import React from 'react';
+import { CardPatient } from './CardPatient';
 
-const DisplaySocialMedia = styled.div`
-    display:flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    width:1200px;
-    margin-bottom: 2rem;
-    
-  
-
-    @media (max-width: 931px) {
-        flex-flow: column wrap;
-        max-width: 340px;
-        margin-top: 2rem;
-        margin-bottom: 0;
-      }
-
-    button {
-        margin-top: 2rem;    
-        display:flex;
-        align-items: center;
-        max-width:200px;
-        border: none;
-        padding:5px;
-        background-color: #fc5c65;
-        color: black;
-        cursor: pointer;   
-        font-size: 1.04em;
-        opacity: 1; 
-        color: white;
-        border-radius:2px;
-
-        &:hover {
-            opacity: 0.9;
-        }
-
-    }
-
-    .title {
-        padding: 2rem;
-        margin-left: 5rem;
-        display:flex;
-        flex-flow: column nowrap;
-        align-items: flex-start;
-        justify-self: flex-start;
-        width: 100%;
-        
-        @media (max-width: 931px) {
-            flex-flow: column wrap;
-            padding: 0;
-            margin: 0;
-            justify-content: center;
-            align-items: center;
-            
-          }
-       
-        
-
-        p {
-            line-height:1.2em;
-            font-size: 1.2em;
-
-            @media (max-width: 931px) {
-                
-                padding: 1rem;
-                text-align: center;
-                margin-bottom: 1rem;
-                
-              }
-        }
-
-        h1 {
-            font-size:2.5em; 
-            font-weight: 400;
-            
-            @media (max-width: 931px) {
-                font-size: 2.2em;
-                font-weight: bold;
-                color: #fc5c65;
-              }
-        }
-        
-
-    }
-
-`
 
 
 export function Home() {
+    const frase = 'abordagem que associa saúde e estética.'
+    const frase2 = ' abordagem que associa saúde e estética.'
 
     return (
         <Container>
             <div className="firstContent">
                 <h1>Dr. Eder Massashi Yashiki</h1>
-                <h2>abordagem que associa saúde e <strong>estética</strong></h2>
+                <Typical
+                    steps={[frase, 5000, frase2, 5000]}
+                    loop={Infinity}
+                    wrapper="h2"
+                    />
             </div>
 
             <div className="secondContent">
                 <div className="title">
                     <h1>Saúde bucal com quem realmente entende</h1>
                     <h6>Atuamos a mais de 20 anos  no segmento de Odontologia, nosso objetivo
-é proporcionar aos nossos clientes a excêlencia dos nossos serviços</h6>
+                    é proporcionar aos nossos clientes a excêlencia dos nossos serviços</h6>
                 </div>
 
                 <div className="cardContainer">
@@ -118,6 +43,42 @@ export function Home() {
                     })}
                 </div>
             </div>
+
+            <Slider/>
+
+            <DisplaySocialMedia>
+
+                    <div className="title">
+                        <a href="https://www.instagram.com/dr_edermassashi/?hl=pt-br" target="_blank"><img src="/img/socialMedia/instagramcolor.png"/></a>
+                        <a href="https://www.instagram.com/dr_edermassashi/?hl=pt-br" target="_blank"><p>@dr_edermassashi</p></a>
+                        <h1>ENCONTRE-NOS NO INSTAGRAM</h1>
+                    </div>
+
+                    <InstagramFeed/>
+
+            </DisplaySocialMedia>
+
+                    
+
+            <ContainerPatients>
+
+            <div className="title">
+                    <h1><strong>Pacientes</strong> satisfeitos</h1>
+                    <h6>sorrisos e saúde <strong>transformados</strong></h6>
+                </div>
+
+
+                <div className="cardContainer">
+                    {CardPatients.map((card,index) => {
+                        return (
+                            <CardPatient key={index} title={card.title} description={card.description} url={card.url}/>
+                        )
+                    })}
+                </div>
+
+                <button type="button"><img src="/img/socialMedia/whatsappcolor.png"/>AGENDE SUA CONSULTA</button>
+
+            </ContainerPatients>
         </Container>
     )
 }

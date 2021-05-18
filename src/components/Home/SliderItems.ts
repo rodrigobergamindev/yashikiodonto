@@ -1,23 +1,23 @@
 
 export const SliderItems = [
   {
-    title: 'Pulseiras',
-    url: '/img/slider01.jpeg',
-    subtitle: 'Procura por uma pulseira?',
-    description: 'Pulseiras banhadas em prata ou folheadas, de tamanhos variados, com ou sem strass. Vendemos em atacado e varejo, consulte os tamanhos. ',
+    title: 'Somente alguns dos nossos tratamentos',
+    url: '/img/slider/implantodontia.jpg',
+    subtitle: 'Implantodontia',
+    description: 'A implantodontia é a especialidade odontológica que reabilita a saúde bucal quando há perda de um ou mais dentes.  ',
 
   },
     {
-        title: 'Berloques',
-        url: '/img/slider02.jpeg',
-        subtitle: 'Cada berloque é um pedaço da sua história',
-        description: 'Berloques e separadores com ou sem strass, envernizados, banhados em prata e níquel. Peças de altíssima qualidade e com banho nacional.',
+        title: 'Somente alguns dos nossos tratamentos',
+        url: '/img/slider/ortodontia.jpg',
+        subtitle: 'Ortodontia',
+        description: 'Tratamento corretivo dos defeitos de crescimento, desenvolvimento e amadurecimento dos dentes e da face.',
       },
 
       {
-        title: 'Argolas',
-        url: '/img/slider03.jpeg',
-        subtitle:'Argolinhas para todos os gostos',
-        description: 'Argolinhas folheadas com ou sem strass de variados tipos. Entre em contato e consulte a disponibilidade.',
+        title: 'Somente alguns dos nossos tratamentos',
+        url: '/img/slider/endodontia.jpg',
+        subtitle:'Endodontia',
+        description: 'Cuidar da parte interna do dente é tarefa para especialista. Seja uma cárie ou canal, cuide com a Yashiki Odontologia.',
       },
 ]
