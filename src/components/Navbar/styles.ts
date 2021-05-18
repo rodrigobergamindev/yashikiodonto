@@ -71,8 +71,8 @@ export const SocialMediaList = styled.ul`
           
 
           img {
-            width: 30px;
-            height: 30px;
+            width: 2rem;
+            height: 2rem;
             transform: scale(1.0);
             transition: all 0.3s ease;
             cursor: pointer;
