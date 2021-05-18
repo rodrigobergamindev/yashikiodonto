@@ -156,7 +156,7 @@ export const ContainerSlider = styled.div`
   }
 
   .prev {
-        width: 50px;
+    width: 50px;
       height: 50px;
       background:blue;
   }

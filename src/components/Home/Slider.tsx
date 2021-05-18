@@ -14,6 +14,8 @@ export function Slider() {
 
     function changeNext() {
 
+        console.log(index + " -> Index Next")
+
         if(index >= SliderItems.length -1){
             setIndex(0)
             setItem(SliderItems[index])
@@ -29,6 +31,7 @@ export function Slider() {
 
     function changePrev() {
 
+        console.log(index + " -> Index Prev")
         if(index <= 0 ) {
             setIndex(SliderItems.length - 1)
             setItem(SliderItems[index])
@@ -36,7 +39,6 @@ export function Slider() {
         }else {
             setIndex(index - 1)
             setItem(SliderItems[index])
-        
         }
 
         
