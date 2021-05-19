@@ -11,7 +11,7 @@ export const Container = styled.section`
     margin-top: 5rem;
 
     .firstContent {
-        background-image: url('img/header.jpg');
+        background-image: url('img/header.png');
         border-bottom: 10px solid var(--primary);
         width: 100%;
         background-attachment: fixed;
@@ -139,7 +139,7 @@ export const CardItem = styled.div`
 
 
 export const ContainerSlider = styled.div`
-    height: 100vh;
+    height: 70vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -204,6 +204,7 @@ export const ContainerSlider = styled.div`
                 font-size: 1.2rem;
 
                 img {
+                    
                     width: 1.7rem;
                     height: 1.7rem;
                 }
@@ -219,7 +220,6 @@ export const ContainerSlider = styled.div`
             }
         }
         img {
-            
             object-fit: cover;
             width:100%;
             height:100%;
@@ -229,16 +229,26 @@ export const ContainerSlider = styled.div`
         position:absolute;
         width: 50px;
         height: 50px;
-        background-color:blue;
+        cursor: pointer;
         right: 10rem;
+        transition: all 0.4s ease;
+        &:hover{
+            transition: all 0.4s ease;
+            transform: scale(1.3)
+        }
     }
 
     .prev {
         position:absolute;
         left: 10rem;
-        width: 50px;
-        height: 50px;
-        background-color:red;
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        transition: all 0.4s ease;
+        &:hover{
+            transition: all 0.4s ease;
+            transform: scale(1.3);
+        }
     }
 
 `
@@ -344,8 +354,7 @@ export const DisplaySocialMedia = styled.div`
 export const ContainerPatients = styled.div`
 
     width: 100%;
-    height: 60vh;
-    padding: 1rem;
+    height: 70vh;
 
     background: var(--primary);
 

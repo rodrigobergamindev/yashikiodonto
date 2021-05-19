@@ -50,8 +50,8 @@ export function Slider() {
     return (
         
         <ContainerSlider>
-          <div className="prev"  onClick={changePrev} ></div>
-            <div className="next"  onClick={changeNext} ></div>
+          <img src="/img/icons/back.png" className="prev"  onClick={changePrev} />
+            <img src="/img/icons/next.png" className="next"  onClick={changeNext} />
             <div className="containerImage">
               
                 
