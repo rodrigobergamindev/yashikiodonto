@@ -57,12 +57,15 @@ export const Container = styled.section`
         display: flex;
         flex-direction: column;
         border-bottom: 10px solid var(--primary);
+        width:100%;
 
         .cardContainer {
+            align-self: center;
             display: flex;
             flex-flow: row wrap;
             align-items: center;
             justify-content: center;
+            max-width: 100rem;
       
     }
 
@@ -137,29 +140,106 @@ export const CardItem = styled.div`
 
 export const ContainerSlider = styled.div`
     height: 100vh;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    will-change: transform, opacity;
- 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    width: 100%;
     border-bottom: 10px solid var(--primary);
+    
+    
 
+    .containerImage {
+        width:100%;
+        height:100%;
+        display: flex;
+        align-items:center;
+        align-self: center;
+        justify-content: center;
+        
+        .containerDesc {
+            
+            display: flex;
+            position: absolute;
+            flex-direction: column;
+            height: 30rem;
+            justify-content: flex-start;
+           
+            h1 {
+                color: var(--secondary);
+                font-size: 3rem;
+                font-weight: 400;
+            }
 
-  .next {
-      width: 50px;
-      height: 50px;
-      background: var(--primary);
-  }
+            .descriptionProced {
+                max-width: 50rem;
+             
+                height:100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
 
-  .prev {
-    width: 50px;
-      height: 50px;
-      background:blue;
-  }
+                h2 {
+                    color: var(--primary);
+                    font-weight: 600;
+                    font-size: 2rem;
+                    letter-spacing:2px;
+                    border-bottom: 3px solid var(--secondary);
+                }
+
+                button {
+              
+                background: var(--secondary);
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-around;
+                width: 20rem;
+                padding: 0.7rem;
+                border: none;
+                color: var(--primary);
+                border-radius: 4px;
+                outline: none;
+                box-shadow: none;
+                transition: 0.3s linear;
+
+                font-size: 1.2rem;
+
+                img {
+                    width: 1.7rem;
+                    height: 1.7rem;
+                }
+
+                &:hover {
+                    filter: brightness(90%);
+                }
+                }
+            }
+
+            p {
+                color: var(--secondary);
+            }
+        }
+        img {
+            
+            object-fit: cover;
+            width:100%;
+            height:100%;
+        }
+    }
+    .next {
+        position:absolute;
+        width: 50px;
+        height: 50px;
+        background-color:blue;
+        right: 10rem;
+    }
+
+    .prev {
+        position:absolute;
+        left: 10rem;
+        width: 50px;
+        height: 50px;
+        background-color:red;
+    }
 
 `
 
@@ -264,8 +344,9 @@ export const DisplaySocialMedia = styled.div`
 export const ContainerPatients = styled.div`
 
     width: 100%;
-    height: 70vh;
-    
+    height: 60vh;
+    padding: 1rem;
+
     background: var(--primary);
 
     display: flex;
@@ -274,7 +355,6 @@ export const ContainerPatients = styled.div`
     justify-content: space-around;
 
     button {
-      padding: 0.4rem;
       margin-bottom: 2rem;
       background: var(--secondary);
       display: flex;
@@ -289,7 +369,7 @@ export const ContainerPatients = styled.div`
       box-shadow: none;
       transition: 0.3s linear;
 
-      font-size: 1.7rem;
+      font-size: 2rem;
 
       img {
         width: 2.6rem;

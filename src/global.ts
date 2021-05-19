@@ -33,17 +33,4 @@ export const GlobalStyle = createGlobalStyle `
     button {
         cursor: pointer;
     }
-    body, input, textarea, button {
-        font-family: 'Poppins', sans-serif;
-        font-weight:400;
-    }
-    h1,h2,h3,h4,h5,strong {
-        font-family: 'Poppins', sans-serif;
-        font-weight:600;
-    }
-
-    p,li,a, h6 {
-        font-family: 'Poppins', sans-serif;
-        font-weight:400;
-    }
 `

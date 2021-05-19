@@ -3,21 +3,21 @@ export const SliderItems = [
   {
     title: 'Somente alguns dos nossos tratamentos',
     url: '/img/slider/implantodontia.jpg',
-    subtitle: 'Implantodontia',
-    description: 'A implantodontia é a especialidade odontológica que reabilita a saúde bucal quando há perda de um ou mais dentes.  ',
+    subtitle: 'IMPLANTODONTIA',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
 
   },
     {
         title: 'Somente alguns dos nossos tratamentos',
         url: '/img/slider/ortodontia.jpg',
-        subtitle: 'Ortodontia',
-        description: 'Tratamento corretivo dos defeitos de crescimento, desenvolvimento e amadurecimento dos dentes e da face.',
+        subtitle: 'ORTODONTIA',
+        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
       },
 
       {
         title: 'Somente alguns dos nossos tratamentos',
         url: '/img/slider/endodontia.jpg',
-        subtitle:'Endodontia',
-        description: 'Cuidar da parte interna do dente é tarefa para especialista. Seja uma cárie ou canal, cuide com a Yashiki Odontologia.',
+        subtitle:'ENDODONTIA',
+        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
       },
 ]

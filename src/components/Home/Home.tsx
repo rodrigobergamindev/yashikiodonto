@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 import { InstagramFeed } from './InstagramFeed';
-import { Slider } from './Slider';
+import {Slider} from './Slideshow/Slider';
 import {CardPatients} from './CardPatients'
 
 import {Container, DisplaySocialMedia, ContainerPatients } from './styles'
 import {Cards} from './Cards'
 import {Card} from './Card'
 
-import Typical from 'react-typical'
-import React from 'react';
+import Typical from "react-typical";
+
 import { CardPatient } from './CardPatient';
 
 

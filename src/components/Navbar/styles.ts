@@ -24,13 +24,14 @@ export const Nav = styled.nav`
       display: flex;
       align-items: flex-end;
       justify-content: space-around;
-      width: 200px;
+      width: 14rem;
       border: none;
       color: var(--primary);
       border-radius: 4px;
       outline: none;
       box-shadow: none;
       transition: 0.3s linear;
+      font-size: 1rem;
 
       img {
         width: 1.2rem;
@@ -62,7 +63,7 @@ export const SocialMediaList = styled.ul`
         list-style: none;
         padding: 0.5rem;
         justify-content: flex-end;
-        position: relative;
+
         top: 5px;
         flex: 1;
 
@@ -93,8 +94,9 @@ export const Ul = styled.ul`
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
-    flex: 4;
-        
+    flex: 7;
+    
+   
 
 
   @media(min-width: 931px){

@@ -64,7 +64,6 @@ export const StyledFooter = styled.footer`
                     
                     font-size: 1.5em;
                     color: var(--primary);
-                    font-family: 'Jaldi';
                     
                 }
 
