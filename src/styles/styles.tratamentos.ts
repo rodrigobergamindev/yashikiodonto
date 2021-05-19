@@ -29,7 +29,7 @@ export const DescHeader = styled.div`
     display:flex;
     justify-content: flex-start;
     flex-direction: column;
-    
+    max-width: 50rem;
 
 
     h1 {
@@ -38,10 +38,11 @@ export const DescHeader = styled.div`
     }
 
     h6 {
-        max-width: 30rem;
+        
+        
         padding: 0.2rem;
         color: var(--secondary);
-        font-size: 0.8rem;
+        font-size: 1rem;
         font-weight: 400;
     }
 `
@@ -53,7 +54,8 @@ export const ContainerBody = styled.div`
     max-width: 40rem;
     align-self: center;
     padding: 2rem;
-   
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 
 `
 
@@ -71,6 +73,10 @@ export const TextContainer = styled.div`
     display: flex;
     flex-direction: column;
     max-width: 40rem;
+
+    h4{
+        margin-top: 2rem;
+    }
 
     p {
         margin-top: 2rem;
@@ -93,7 +99,7 @@ export const ContainerProfissionais = styled.div`
     display: flex;
 
         h1 {
-        font-weight: 400;
+        
         margin-top: 1rem;
     }
 
@@ -107,22 +113,21 @@ export const ContainerProfissionais = styled.div`
 export const ContainerCards = styled.div`
 
     display: flex;
-    
-    max-width: 40rem;
-    
     justify-content:space-between;
     margin-top: 2rem;
+    align-items: center;
 `
 
 export const CardProfissional = styled.div`
-    
+   
     display:flex;
     align-items: center;
-   
+
     .descAvatar {
         display:flex;
         flex-direction: column;
         padding: 1.5rem;
+        
         
         h4, h6 {
         letter-spacing: 0.5px;
@@ -142,9 +147,10 @@ export const CardProfissional = styled.div`
 
 
     img {
+        border: 1px solid #dcdde1;
         border-radius: 50rem;
-        width: 5rem;
-        height: 5rem;
+        width: 6rem;
+        height: 5.8rem;
     }
 
 `
