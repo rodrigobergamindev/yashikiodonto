@@ -241,8 +241,8 @@ export const ContainerSlider = styled.div`
     .prev {
         position:absolute;
         left: 0;
-        width: 80px;
-        height: 80px;
+        width: 85px;
+        height: 85px;
         cursor: pointer;
         transition: all 0.4s ease;
         &:hover{
