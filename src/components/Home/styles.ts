@@ -230,7 +230,7 @@ export const ContainerSlider = styled.div`
         width: 50px;
         height: 50px;
         cursor: pointer;
-        right: 10rem;
+        right: 0;
         transition: all 0.4s ease;
         &:hover{
             transition: all 0.4s ease;
@@ -240,7 +240,7 @@ export const ContainerSlider = styled.div`
 
     .prev {
         position:absolute;
-        left: 10rem;
+        left: 0;
         width: 80px;
         height: 80px;
         cursor: pointer;
@@ -257,6 +257,38 @@ export const ContainerSlider = styled.div`
 
 
 /**INSTAGRAM FEED */
+
+export const Card = styled.div`
+    max-width: 250px;
+    max-height: 250px;
+    margin: 0.5rem;
+    display:flex;
+    justify-content: center;
+
+    transition: all 0.3s ease;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: all 0.3s ease;
+            box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        }
+
+        @media (max-width: 931px) {
+                
+            &:hover {
+                transform: none;
+                box-shadow: none;
+            }
+
+
+    a{
+        display:flex;
+        align-items:center;
+        justify-content: center;
+
+    }
+        }
+`
 
 
 export const StyledFeed = styled.div`
@@ -354,16 +386,18 @@ export const DisplaySocialMedia = styled.div`
 export const ContainerPatients = styled.div`
 
     width: 100%;
-    height: 70vh;
+   
 
     background: var(--primary);
 
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 4rem;
 
     button {
+        margin-top: 3rem;
       margin-bottom: 2rem;
       background: var(--secondary);
       display: flex;
@@ -410,7 +444,7 @@ export const ContainerPatients = styled.div`
     .cardContainer {
         
             display: flex;
-            flex-flow: row wrap;
+            flex-flow: row nowrap;
             align-items: center;
             justify-content: center;
     }
