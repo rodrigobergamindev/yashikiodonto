@@ -86,7 +86,7 @@ export const Desc = styled.div`
 
     display:flex;
     flex-direction: column;
-    align-items: flex-start;
+  
   
 
 `
@@ -212,7 +212,7 @@ export const ContainerTratamentos = styled.div`
     display: flex;
     flex-flow: row wrap;
     justify-content:space-between;
-
+    margin-top: 5rem;
     
     
 
@@ -227,29 +227,74 @@ export const CardTratamento = styled.div`
     border-radius: 5px;
     border: 1px solid #dcdde1; 
     padding: 2rem;
+    flex-direction: column;
+    position: relative;
+    text-align:center;
     
     .descTratamento {
+        
+        justify-content:space-between;
         
         display:flex;
         flex-direction: column;
         padding: 1.5rem;
+        
+        .titleCard {
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+            h3 {
+            
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
         
         
         h4, h6 {
         letter-spacing: 0.5px;
         
         
-    }
+            }
 
-    h6{
-        font-weight: 400;
-        max-width: 15rem;
-        text-align: justify;
-        margin-top: 0.5rem;
+            h6{
+                font-weight: 400;
         
-    }
+                margin-top: 0.5rem;
+                font-size: 1rem;
+        
+        }
+
+        }
+    
     h4 {
         font-size: 0.8rem;
+    }
+
+    .descCurriculo {
+        display: flex;
+        flex-direction: column;
+        max-width: 30rem;
+
+        h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+            color: var(--primary);
+        }
+
+        .especialidade {
+            margin-top:2rem;
+        }
+
+        
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            
+            li {
+                margin-top: 0.5rem;
+            }
+        }
     }
 
 
@@ -257,20 +302,27 @@ export const CardTratamento = styled.div`
     }
 
 
+    .avatar {
+       
+        position: absolute;
+        top: -5rem;
 
-    img {
-        border: 1px solid #dcdde1;
-        padding: 0.5rem;
-        border-radius: 50rem;
-        width: 6rem;
-        height: 5.8rem;
+        img {
+        object-fit: cover;
+        width: 10rem;
+        height: 10rem;
+        filter: brightness(110%);
+        border-radius: 100%;
     }
+    }
+    
 
     transition: 0.3s ease-in-out;
     &:hover{
         cursor: pointer;
         transition: 0.3s ease-in-out;
-        transform: scale(1.1)
+        transform: scale(1.05)
     }
+
 
 `
