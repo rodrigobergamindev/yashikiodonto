@@ -135,6 +135,9 @@ export const CardProfissional = styled.div`
         
     }
 
+    h6{
+        font-weight: 400;
+    }
     h4 {
 
         font-size: 0.8rem;
