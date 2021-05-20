@@ -1,5 +1,5 @@
-    import {Container, Description, DescHeader, ContainerBody, Desc, Bar,
-    ContainerTratamentos, CardTratamento} from '../styles/styles.tratamentos'
+import {Container, Description, DescHeader, ContainerBody, Desc, Bar,
+   ContainerTratamentos, CardTratamento} from '../styles/styles.tratamentos'
     import {GlobalStyle} from  '../global'
     import {Navbar} from '../components/Navbar/index'
     import {Footer} from '../components/Footer/Footer'
@@ -8,7 +8,7 @@
     
     export default function Tratamentos(){
 
-        const frase = 'Possuimos uma ampla variedade de tratamentos e um corpo clínico especializado e pronto para atender as suas necessidades!'
+        const frase = 'Possuimos um corpo clínico especializado e pronto para atender as suas necessidades.'
     
         return (
             
