@@ -43,26 +43,17 @@ import {Container, Description, DescHeader, ContainerBody, Desc, TextContainer, 
     
                         
                         <CardProfissional>
-                            <img src="/img/avatar/eder.jpg"/>
-                            <div className="descAvatar">
-    
-                            
-                            <h4>EDER MASSASHI YASHIKI</h4>
-                            <h6>CRO.SP - 67976</h6>
-    
-                            </div>
+                        <img className="avatar" src="/img/avatar/eder.jpg"/>
+                        <div className="descAvatar">
+
+                        
+                        <h4>DR. EDER MASSASHI YASHIKI</h4>
+                        <h6>CRO.SP - 69976</h6>
+                        <button type="button"><img src="/img/socialMedia/callwhite.png"/>LIGUE E AGENDE</button>
+
+                        </div>
                         </CardProfissional>
     
-                        <CardProfissional>
-                            <img src="/img/avatar/beatriz.jpg"/>
-                            <div className="descAvatar">
-    
-                            
-                            <h4>BEATRIZ MAYUMI YASHIKI</h4>
-                            <h6>CRO.SP - 9999</h6>
-    
-                            </div>
-                        </CardProfissional>
                         </ContainerCards>
                     </ContainerProfissionais>
                 </Desc>

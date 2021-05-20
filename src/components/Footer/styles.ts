@@ -10,15 +10,14 @@ export const StyledFooter = styled.footer`
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    
+  
     
     display:flex;
     align-items: center;
     justify-content: center;
     color: white;
-   
-    width: 100%;
-
+    width: 100%;    
+    height: 25rem;
 
     .containerFooter {
       
@@ -26,7 +25,7 @@ export const StyledFooter = styled.footer`
         align-items: center;
         justify-content: space-around;
         
-        padding: 5rem;
+       
         width: 100%;
         
         .titleFooter {

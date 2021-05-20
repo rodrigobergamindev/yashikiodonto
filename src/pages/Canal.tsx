@@ -62,12 +62,13 @@ export default function Canal(){
 
 
                     <CardProfissional>
-                        <img src="/img/avatar/beatriz.jpg"/>
+                        <img className="avatar" src="/img/avatar/beatriz.jpg"/>
                         <div className="descAvatar">
 
                         
-                        <h4>BEATRIZ MAYUMI YASHIKI</h4>
-                        <h6>CRO.SP - 9999</h6>
+                        <h4>DRA. BEATRIZ MAYUMI YASHIKI</h4>
+                        <h6>CRO.SP - 124820</h6>
+                        <button type="button"><img src="/img/socialMedia/callwhite.png"/>LIGUE E AGENDE</button>
 
                         </div>
                     </CardProfissional>
