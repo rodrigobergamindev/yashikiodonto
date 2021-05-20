@@ -16,7 +16,7 @@ export const Description = styled.div`
     display:flex;
     justify-content: center;
     align-items: center;
-    height: 40rem;
+    height: 30rem;
     
     background-image: url("/img/tratamentos/tratamento.png");
     background-size: cover;
