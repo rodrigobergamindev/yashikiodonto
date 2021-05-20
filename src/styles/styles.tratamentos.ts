@@ -8,6 +8,7 @@ export const Container = styled.div`
     width: 100%;
 
 
+
 `
 
 export const Description = styled.div`
@@ -15,7 +16,7 @@ export const Description = styled.div`
     display:flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: 40rem;
     
     background-image: url("/img/tratamentos/tratamento.png");
     background-size: cover;
