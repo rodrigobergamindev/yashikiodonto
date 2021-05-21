@@ -16,32 +16,6 @@ export const Nav = styled.nav`
     justify-content: space-between;
     align-items:center;
     background: var(--primary);
-
-    button {
-      padding: 0.4rem;
- 
-      background: var(--secondary);
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-around;
-      width: 14rem;
-      border: none;
-      color: var(--primary);
-      border-radius: 4px;
-      outline: none;
-      box-shadow: none;
-      transition: 0.3s linear;
-      font-size: 1rem;
-
-      img {
-        width: 1.2rem;
-        height: 1.2rem;
-      }
-
-      &:hover {
-        filter: brightness(90%);
-      }
-    }
     
 
 .logo {
@@ -63,7 +37,7 @@ export const SocialMediaList = styled.ul`
         list-style: none;
         padding: 0.5rem;
         justify-content: flex-end;
-
+        position: relative;
         top: 5px;
         flex: 1;
 
@@ -72,8 +46,8 @@ export const SocialMediaList = styled.ul`
           
 
           img {
-            width: 2rem;
-            height: 2rem;
+            width: 1.5rem;
+            height: 1.5rem;
             transform: scale(1.0);
             transition: all 0.3s ease;
             cursor: pointer;
@@ -88,7 +62,24 @@ export const SocialMediaList = styled.ul`
 `
 
 
+
+
 export const Ul = styled.ul`
+
+@keyframes rotateX {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  50% {
+    transform: rotateX(-20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+
     list-style: none;
     display: flex;
     flex-flow: row nowrap;
@@ -105,12 +96,67 @@ export const Ul = styled.ul`
    
     li {
       color: var(--secondary);
-      padding: 0.7rem;
+      padding: 0.7rem;  
+    }
+
+    .submenu {
+  
+      
+      .menuInferior {
+        display: ${({ visible}) => visible ? 'flex' : 'none'};
+        flex-direction: column;
+        list-style: none;
+        position: absolute;
+        text-align: center;
+        top: 3.4rem;
+        transform-origin: top center;
+        animation: rotateX 300ms ease-in-out forwards;
+        background: var(--secondary);
+
+        li {
+          transition: 0.3s ease;
+          font-size: 0.8rem;
+          border-bottom: 1px solid #dcdde1;
+          color: var(--primary);
+         
+          cursor: pointer;
+
+          &:hover{
+            background: var(--primary);
+            
+          }
+
+          a{ 
+            font-size: 0.9rem;
+            letter-spacing: auto;
+            color: var(--primary);
+
+            &:hover {
+              color: var(--secondary);
+            }
+          }
+          
+          &:last-child{
+            border: none;
+          }
+        }
+      }
+
+      .arrow {
+        cursor: pointer;
+        width: 0.7rem;
+        height: 0.7rem;
+        position: relative;
+        left: 5px;
+        top: 1.5px;
+        transition: all 0.4s ease;
+        transform:${({ visible}) => visible ? 'rotateZ(180deg)' : 'rotateZ(0deg)'};
+      }
     }
   
       a{ 
           padding: 10px;
-          font-size: 0.8em;
+          font-size: 1rem;
           letter-spacing: 0.21rem;
           transition: 0.5s linear;
 
@@ -150,4 +196,74 @@ export const Ul = styled.ul`
 
     }
   }
+
+
+
+  .submenuContato {
+  
+      
+  .menuInferiorContato {
+    display: ${({ visibleContato}) => visibleContato ? 'flex' : 'none'};
+    flex-direction: column;
+    list-style: none;
+    position: absolute;
+    text-align: center;
+    top: 3.4rem;
+    transform-origin: top center;
+    animation: rotateX 300ms ease-in-out forwards;
+    background: var(--secondary);
+    z-index:9999;
+
+    li {
+      transition: 0.3s ease;
+      font-size: 0.8rem;
+      border-bottom: 1px solid #dcdde1;
+      color: var(--primary);
+      padding: 0.7rem;
+      cursor: pointer;
+
+      &:hover{
+        background: var(--primary);
+        
+      }
+
+      a{ 
+        font-size: 0.9rem;
+        letter-spacing: auto;
+        color: var(--primary);
+
+        &:hover {
+          color: var(--secondary);
+        }
+      }
+      
+      &:last-child{
+        border: none;
+      }
+    }
+  }
+
+  .arrowContato {
+    cursor: pointer;
+    width: 0.7rem;
+    height: 0.7rem;
+    position: relative;
+    left: 5px;
+    top: 1.5px;
+    transition: all 0.4s ease;
+    transform:${({ visibleContato}) => visibleContato ? 'rotateZ(180deg)' : 'rotateZ(0deg)'};
+  }
+}
+
+  a{ 
+      padding: 10px;
+      font-size: 1rem;
+      letter-spacing: 0.21rem;
+      transition: 0.5s linear;
+
+      &:hover {
+        color: var(--terciary);
+    }
+}
+
 `;

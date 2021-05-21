@@ -139,6 +139,8 @@ export const CardItem = styled.div`
 
 
 export const ContainerSlider = styled.div`
+
+
     height: 70vh;
     display: flex;
     justify-content: space-between;
@@ -398,7 +400,7 @@ export const ContainerPatients = styled.div`
     padding: 4rem;
 
     button {
-        margin-top: 3rem;
+    margin-top: 3rem;
       margin-bottom: 2rem;
       background: var(--secondary);
       display: flex;
@@ -409,11 +411,9 @@ export const ContainerPatients = styled.div`
       border: none;
       color: var(--primary);
       border-radius: 4px;
-      outline: none;
-      box-shadow: none;
-      transition: 0.3s linear;
+      transition: 0.3s ease-out;
 
-      font-size: 2rem;
+      font-size: 1.8rem;
 
       img {
         width: 2.6rem;
@@ -421,7 +421,12 @@ export const ContainerPatients = styled.div`
       }
 
       &:hover {
-        filter: brightness(90%);
+        filter: brightness(120%);
+
+        img {
+            transform: rotateZ(-360deg);
+            transition: all 0.5s ease;
+        }
       }
     }
 

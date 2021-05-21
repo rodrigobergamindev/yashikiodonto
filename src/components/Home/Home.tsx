@@ -76,7 +76,7 @@ export function Home() {
                     })}
                 </div>
 
-                <button type="button"><img src="/img/socialMedia/whatsappcolor.png"/>AGENDE SUA CONSULTA</button>
+                <a href="https://api.whatsapp.com/send?phone=551125613326&text=Ol%C3%A1%20gostaria%20de%20agendar%20uma%20consulta" target="_blank"><button type="button"><img src="/img/socialMedia/whatsappcolor.png"/>AGENDE SUA CONSULTA</button></a>
 
             </ContainerPatients>
         </Container>
