@@ -48,13 +48,12 @@ export const SocialMediaList = styled.ul`
           img {
             width: 1.5rem;
             height: 1.5rem;
-            transform: scale(1.0);
-            transition: all 0.3s ease;
+            
             cursor: pointer;
     
             &:hover  {
-              transform: scale(1.5);
-              transition: all 0.3s ease;
+              transform: rotateZ(-360deg);
+              transition: all 0.7s ease;
             }
           }
         }
