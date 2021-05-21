@@ -37,7 +37,7 @@ import {Container, Description, DescHeader, ContainerBody, Bar,
 
                         <Card>
                             <div className="avatar">
-                                <img src="/img/avatar/Eder.jpg"/>
+                                <img src="/img/avatar/eder.jpg"/>
                             </div>
 
                             <div className="description">
@@ -74,7 +74,7 @@ import {Container, Description, DescHeader, ContainerBody, Bar,
 
                         <Card>
                             <div className="avatar">
-                                <img src="/img/avatar/Beatriz.jpg"/>
+                                <img src="/img/avatar/beatriz.jpg"/>
                             </div>
 
                             <div className="description">
