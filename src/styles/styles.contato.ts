@@ -19,6 +19,10 @@ export const Container = styled.div`
 export const ContainerBody = styled.div`
 
     display:flex;
+
+    iframe{
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
     
 `
 
@@ -109,12 +113,11 @@ export const LateralCard = styled.div`
         margin-top: 1rem;
         justify-content:flex-start;
         list-style-type: none;
-        
         li {
             margin-right: 1rem;
 
             .facebook {
-                width: 1.9rem;
+            width: 1.9rem;
             height: 1.9rem;
             }
         }

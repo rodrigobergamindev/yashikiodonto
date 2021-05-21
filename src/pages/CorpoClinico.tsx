@@ -1,12 +1,12 @@
 import {Container, Description, DescHeader, ContainerBody, Bar,
-   ContainerTratamentos, CardTratamento, ContainerAbout} from '../styles/styles.corpoclinico'
+   ContainerProfissionais, ContainerAbout, Card} from '../styles/styles.corpoclinico'
     import {GlobalStyle} from  '../global'
     import {Navbar} from '../components/Navbar/index'
     import {Footer} from '../components/Footer/Footer'
     import Typical from "react-typical";
-
+    import CallIcon from '@material-ui/icons/Call';
     
-    export default function Tratamentos(){
+    export default function CorpoClinico(){
 
         const frase = 'Possuimos um corpo clínico especializado e pronto para atender as suas necessidades.'
     
@@ -31,107 +31,89 @@ import {Container, Description, DescHeader, ContainerBody, Bar,
     
                 <ContainerBody>
                
-                    <h1 style={{marginBottom: '1rem', alignSelf:'center', color:'var(--primary)'}}>NOSSOS PROFISSIONAIS</h1>
-                    <Bar style={{width: '10rem', marginBottom: '2rem', height: '0.5rem', alignSelf:'center', background:'var(--primary)'}}/>
+                    <h1 className="titleHeader">NOSSOS PROFISSIONAIS</h1>
                     
-                    <ContainerTratamentos>
+                    <ContainerProfissionais>
+
+                        <Card>
+                            <div className="avatar">
+                                <img src="/img/avatar/Eder.jpg"/>
+                            </div>
+
+                            <div className="description">
+
+                                <div className="title">
+                                    <h2>DR. EDER MASSASHI YASHIKI</h2>
+                                    <h6>CRO.SP - 69976</h6>
+                                </div>
+
+                                <div className="about">
+                                    <h3>FORMAÇÃO ACADÊMICA</h3>
+                                    <ul>
+                                        <li>ODONTOLOGIA PELA FACULDADE DE PRESIDENTE PRUDENTE</li>
+                                        <li>CURSO DE IMPLANTODONTIA PELA INSTITUIÇÃO XXXX</li>
+                                    </ul>
+                                    
+                                    <h3>ESPECIALIDADE</h3>
+                                    <ul>
+                                        <li>IMPLANTODONTIA</li>
+                                    </ul>
+                                </div>
+                                
+                                <div className="contato">
+                                    <button type="button"><CallIcon className="icon"/>LIGUE E AGENDE</button>
+
+                                    <ul className="socialMedia">
+                                        <li><img src="/img/socialMedia/instagram.png"/></li>
+                                        <li><img src="/img/socialMedia/whatsapp.png"/></li>
+                                        <li><img src="/img/socialMedia/facebook.png"/></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </Card>
+
+                        <Card>
+                            <div className="avatar">
+                                <img src="/img/avatar/Beatriz.jpg"/>
+                            </div>
+
+                            <div className="description">
+
+                                <div className="title">
+                                    <h2>DRA. BEATRIZ MAYUMI YASHIKI</h2>
+                                    <h6>CRO.SP - 69976</h6>
+                                </div>
+
+                                <div className="about">
+                                    <h3>FORMAÇÃO ACADÊMICA</h3>
+                                    <ul>
+                                        <li>ODONTOLOGIA PELA UNIVERSIDADE DE MOGI DAS CRUZES</li>
+                                        <li>CURSO DE HOF PELA INSTITUIÇÃO XXXX</li>
+                                        <li>ESPECIALIZAÇÃO EM ENDODONTIA PELA FAOA</li>
+                                        <li>ESPECIALIZAÇÃO EM HOF PELA IBOP</li>
+                                    </ul>
+                                    
+                                    <h3>ESPECIALIDADE</h3>
+                                    <ul>
+                                        <li>ENDODONTIA</li>
+                                        <li>HARMONIZAÇÃO OROFACIAL</li>
+                                    </ul>
+                                </div>
+                                
+                                <div className="contato">
+                                <button type="button"><CallIcon className="icon"/>LIGUE E AGENDE</button>
+
+                                    <ul className="socialMedia">
+                                        <li><img src="/img/socialMedia/instagram.png"/></li>
+                                        <li><img src="/img/socialMedia/whatsapp.png"/></li>
+                                        <li><img src="/img/socialMedia/facebook.png"/></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </Card>
                         
-                            <CardTratamento>
-                                <div className="avatar">
-                                    <img src="/img/avatar/eder.jpg"/>
-                                </div>
                             
-
-                            <div className="descTratamento">
-    
-                            <div className="titleCard">
-                            <h3>DR. EDER MASSASHI YASHIKI</h3>
-                            <h6>CRO.SP - 67976</h6>
-                            </div>
-
-                            <div className="descCurriculo">
-                                <h3>Formação Profissional</h3>
-                                <ul>
-                                    <li>Lorem Ipsum is simply dummy text of the printing</li>
-                                    <li>Lorem Ipsum is simply dummy text of the printing </li>
-                                </ul>
-
-                                <div className="especialidade">
-                                <h3>
-                                    Especialidade
-                                </h3>
-
-                                <ul>
-                                <li>Lorem Ipsum is simply dummy text of the printing</li>
-                                <li>Lorem Ipsum is simply dummy text of the printing,simply  </li>
-                                </ul>
-                                </div>
-                                
-                            </div>
-                            </div>
-
-                                <div className="rodape">
-
-                                
-                                <ul className="socialMedia">
-                                    <li><img src="/img/socialMedia/instagramcircular.png"/></li>
-                                    <li><img src="/img/socialMedia/facebookcolor.png"/></li>
-                                    <li><img src="/img/socialMedia/whatsappcolor.png"/></li>
-                                </ul>
-
-                                <button type="button"><img src="/img/socialMedia/callwhite.png"/>AGENDE SUA CONSULTA</button>
-                            </div>
-                        </CardTratamento>
-
-                        <CardTratamento>
-                                <div className="avatar">
-                                    <img src="/img/avatar/beatriz.jpg"/>
-                                </div>
-                            
-
-                            <div className="descTratamento">
-    
-                            <div className="titleCard">
-                            <h3>DRA. BEATRIZ MAYUMI YASHIKI</h3>
-                            <h6>CRO.SP - 124820</h6>
-                            </div>
-
-                            <div className="descCurriculo">
-                                <h3>Formação Profissional</h3>
-                                <ul>
-                                    <li>Lorem Ipsum is simply dummy text of the printing</li>
-                                    <li>Lorem Ipsum is simply dummy text of the printing </li>
-                                    <li>Lorem Ipsum is simply dummy text of the printing </li>
-                                    <li>Lorem Ipsum is simply dummy text of the printing </li>
-                                </ul>
-
-                                <div className="especialidade">
-                                <h3>
-                                    Especialidade
-                                </h3>
-
-                                <ul>
-                                <li>Especialização em Endodontia pela Faculdade FAOA</li>
-                                <li>Especialização em Harmonização Orofacial pelo instituto IBOP</li>
-                                </ul>
-                                </div>
-                                
-                            </div>
-                            </div>
-
-                                <div className="rodape">
-
-                                
-                                <ul className="socialMedia">
-                                    <li><img src="/img/socialMedia/instagramcircular.png"/></li>
-                                    <li><img src="/img/socialMedia/facebookcolor.png"/></li>
-                                    <li><img src="/img/socialMedia/whatsappcolor.png"/></li>
-                                </ul>
-
-                                <button type="button"><img src="/img/socialMedia/callwhite.png"/>AGENDE SUA CONSULTA</button>
-                            </div>
-                        </CardTratamento>
-                    </ContainerTratamentos>
+                    </ContainerProfissionais>
 
 
                     <ContainerAbout>

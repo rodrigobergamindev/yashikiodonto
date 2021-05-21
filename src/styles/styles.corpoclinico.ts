@@ -18,7 +18,7 @@ export const Description = styled.div`
     align-items: center;
     height: 30rem;
     
-    background-image: url("/img/corpoclinico.png");
+    background-image: url("/img/corpoclinico2.png");
     background-size: cover;
     background-attachment: fixed;
    
@@ -81,6 +81,13 @@ export const ContainerBody = styled.div`
     max-width:90rem;
 
     justify-content: space-between;
+
+    .titleHeader {
+        font-size:2.5rem;
+        color: var(--primary);
+        border-bottom: 0.5rem solid var(--primary);
+        
+    }
 
 
 
@@ -146,185 +153,129 @@ export const ContainerAbout = styled.div`
 
 
 
-export const ContainerTratamentos = styled.div`
+export const ContainerProfissionais = styled.div`
 
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
     justify-content:space-between;
     margin-top: 5rem;
     max-width: 120rem;
-
-
+    align-items: center;
 
 `
 
-export const CardTratamento = styled.div`
-
-    display:flex;
-    align-items: center;
-    margin: 2rem 3rem;
-    border-radius: 5px;
-    border: 1px solid #dcdde1; 
-    padding: 2rem;
-    flex-direction: column;
-    position: relative;
-    text-align:center;
-    justify-content: space-between;
-    
-    .descTratamento {
-        
-        justify-content:space-between;
-        display:flex;
-        flex-direction: column;
-        padding: 1.5rem;
-        max-width: 30rem;
-        
-        .titleCard {
-            margin-top: 3rem;
-            margin-bottom: 2rem;
-            h3 {
-            
-            font-size: 1.5rem;
-            color: var(--primary);
-        }
-        
-        
-        h4, h6 {
-        letter-spacing: 0.5px;
-        
-        
-            }
-
-            h6{
-                font-weight: 400;
-        
-                margin-top: 0.5rem;
-                font-size: 1rem;
-        
-        }
-
-        }
-    
-    h4 {
-        font-size: 0.8rem;
-    }
-
-    .descCurriculo {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: flex-start;
-
-        h3 {
-            font-size: 1.1rem;
-            margin-bottom: 0.3rem;
-            color: var(--primary);
-        }
-
-        .especialidade {
-
-            h3 {
-            font-size: 1.1rem;
-            margin-bottom: 0.3rem;
-            color: var(--primary);
-        }
-
-            text-align: left;
-            margin-top:1rem;
-            display: flex;
-            flex-direction: column;
-            justify-content:flex-start;
-            align-items: flex-start;
-
-            ul {
-                align-self: flex-start;
-            }
-        }
-
-        
-
-        ul {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            
-            li {
-                margin-top: 0.5rem;
-            }
-        }
-    }
-
-
-   
-    }
+export const Card = styled.div`
+    margin-bottom: 3rem;
+    display: flex;
+    max-width: 120rem;
+    background-color: var(--primary);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.12);
 
 
     .avatar {
-       
-        position: absolute;
-        top: -5rem;
-
         img {
-        object-fit: cover;
-        width: 9rem;
-        height: 9rem;
-        filter: brightness(110%);
-        border-radius: 100%;
-        border: 1px solid #dcdde1;
-    }
-    }
-
-    .rodape {
-        
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        width:100%;
-        .socialMedia {
-       
-        list-style: none;
-        display:flex;
-        width: 100%;
-        align-self: flex-start;
-        justify-content:flex-start;
-        li {
-            padding: 0.3rem;
-            img {
-                cursor: pointer;
-                max-width: 1.5rem;
-                max-height: 1.5rem;
-            }
+            filter: brightness(115%);
+            width: 20rem;
+            height: 100%;
+            object-fit: cover;
         }
     }
 
-    button {
-      padding: 0.4rem;
- 
-      background: var(--primary);
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      border: none;
-      color: var(--secondary);
-      border-radius: 4px;
-      transition: 0.3s ease;
-      font-size: 0.9rem;
-      max-height: 2rem;
-      width: 25rem;
-      img {
-        width: 1.2rem;
-        height: 1.2rem;
-      }
+    .description {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        align-items:flex-start;
+        color: var(--secondary);
+        padding: 1.5rem;
+        .title {
+            margin-bottom: 1rem;
+            h2{
+                font-size: 1.5rem;
+            }
+            h6 {
+                font-size: 0.8rem;
+                font-weight: 400;
+            }
+        }
 
-      &:hover {
-        opacity: 0.9;
-      }
+        .about {
+            h3 {
+                font-size: 1.3rem;
+                
+            }
+
+            ul {
+                margin-top: 0.5rem;
+                list-style: none;
+                margin-bottom: 1rem;
+            }
+
+            li,p {
+                font-size: 0.8rem;
+            }
+
+            li {
+                margin-bottom: 0.1rem;
+            }
+
+
+        }
+
+        .contato {
+            display: flex;
+            justify-content:space-between;
+            margin-top: 1rem;
+            width: 100%;
+            align-items: flex-end;
+
+            button {
+                    width: 10rem;
+                    padding: 0.4rem;
+                    border: 1px solid white;
+                    background: var(--primary);
+                    display: flex;
+                    justify-content: space-around;
+                    color: var(--secondary);
+                    border-radius: 4px;
+                    max-width: 10rem;
+                    box-shadow: none;
+                    transition: 0.3s linear;
+                    font-size: 0.9rem;
+
+                    .icon {
+                        font-size: 1rem;
+                        align-self: center;
+                    }
+
+                    &:hover {
+                        background-color: var(--secondary);
+                        color: var(--primary);
+                    }
+            }
+
+            .socialMedia {
+                display: flex;
+                list-style: none;
+                align-items: flex-end;
+
+                li {
+                    padding: 0 0.2rem;
+                    img {
+                        cursor: pointer;
+                        width: 1.5rem;
+                        height: 1.5rem;
+                        transition:0.3s ease;
+
+                        &:hover{
+                            transition:0.3s ease;
+                            transform: scale(1.5);
+                        }
+                    }
+                }
+            }
+        }
+
     }
-
-
-    }
-
-   
-
+    
 `

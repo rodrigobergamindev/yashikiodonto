@@ -18,7 +18,7 @@ export const Description = styled.div`
     align-items: center;
     height: 30rem;
     
-    background-image: url("/img/tratamentos/tratamento.png");
+    background-image: url("/img/tratamentos/tratamentos.png");
     background-size: cover;
     background-attachment: fixed;
    
