@@ -18,7 +18,7 @@ export const Description = styled.div`
     align-items: center;
     height: 30rem;
     
-    background-image: url("/img/tratamentos/tratamento.png");
+    background-image: url("/img/corpoclinico.png");
     background-size: cover;
     background-attachment: fixed;
    
@@ -74,137 +74,76 @@ export const ContainerBody = styled.div`
 
     display: flex;
     flex-direction: column;
-    max-width: 50rem;
     align-self: center;
     padding: 2rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    max-width:90rem;
+
+    justify-content: space-between;
+
+
 
 `
 
-export const Desc = styled.div`
-
-    display:flex;
-    flex-direction: column;
-  
-  
-
-`
-
-export const TextContainer = styled.div`
-
-    display: flex;
-    flex-direction: column;
-    max-width: 40rem;
-
-    h4{
-        margin-top: 2rem;
-    }
-
-    p {
-        margin-top: 2rem;
-        text-align: justify;
-    }
-    margin-bottom: 5rem;
-`
 
 export const Bar = styled.div`
-
-    width: 10rem;
-    height: 1rem;
-    background-color: #333;
+    
+    height: 0.5rem;
+    background-color: var(--primary);
 `
 
-export const ContainerProfissionais = styled.div`
 
+export const ContainerAbout = styled.div`
+
+    margin-top: 2rem;
+    padding: 3rem;
     display: flex;
     flex-direction: column;
-    display: flex;
+    max-width:100%;
 
-        h1 {
-        
-        margin-top: 1rem;
-    }
-
-
-`
-
-export const ContainerCards = styled.div`
-
-    display: flex;
-    justify-content:space-between;
-    margin-top: 2rem;
-    align-items: center;
-    max-width: 80rem;
-  
+    h1 {
+        font-size:2rem;
+        color: var(--secondary);
+        background-color: var(--primary);
+        padding: 1rem;
+        border-radius: 4px;
     
+    }
+
+
+    .aboutDescription {
+        display: flex;
+        margin-top: 2rem;
+
+        img {
+            margin-right: 4rem;
+            height: 20rem;
+            max-width: 20rem;
+            object-fit: cover;
+            box-shadow: 10px  10px  var(--primary);
+
+        }
+
+        .containerText{
+                display: flex;
+                flex-direction: column;
+                justify-content:space-between;
+
+                h4 {
+                    font-size: 1.7rem;
+                }
+                
+                p {
+                    text-align:justify;
+                    
+                }
+            }
+    }
+
+
 `
 
-export const CardProfissional = styled.div`
-   
-    display:flex;
-    align-items: center;
-
-    .descAvatar {
-        display:flex;
-        flex-direction: column;
-        padding: 1.5rem;
-        
-        
-        h4, h6 {
-        letter-spacing: 0.5px;
-        
-        
-    }
-
-    h6{
-        font-weight: 400;
-    }
-
-    h4 {
-
-        font-size: 0.8rem;
-    }
-
-
-    button {
-      padding: 0.4rem;
- 
-      background: var(--primary);
-      display: flex;
-      justify-content: space-around;
-      
-      border: none;
-      color: var(--secondary);
-      border-radius: 4px;
-      max-width: 10rem;
-      box-shadow: none;
-      transition: 0.3s linear;
-      font-size: 0.9rem;
-
-      img {
-        width: 1.2rem;
-        height: 1.2rem;
-      }
-
-      &:hover {
-        opacity: 0.9;
-      }
-    }
-
-   
-    }
-
-
-
-    .avatar {
-        border: 1px solid #dcdde1;
-        border-radius: 50rem;
-        width: 6rem;
-        height: 5.8rem;
-    }
-
-`
 
 
 export const ContainerTratamentos = styled.div`
@@ -213,8 +152,9 @@ export const ContainerTratamentos = styled.div`
     flex-flow: row wrap;
     justify-content:space-between;
     margin-top: 5rem;
-    
-    
+    max-width: 120rem;
+
+
 
 `
 
@@ -222,22 +162,22 @@ export const CardTratamento = styled.div`
 
     display:flex;
     align-items: center;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin: 2rem 3rem;
     border-radius: 5px;
     border: 1px solid #dcdde1; 
     padding: 2rem;
     flex-direction: column;
     position: relative;
     text-align:center;
+    justify-content: space-between;
     
     .descTratamento {
         
         justify-content:space-between;
-        
         display:flex;
         flex-direction: column;
         padding: 1.5rem;
+        max-width: 30rem;
         
         .titleCard {
             margin-top: 3rem;
@@ -272,7 +212,8 @@ export const CardTratamento = styled.div`
     .descCurriculo {
         display: flex;
         flex-direction: column;
-        max-width: 30rem;
+        flex-wrap: wrap;
+        align-items: flex-start;
 
         h3 {
             font-size: 1.1rem;
@@ -281,7 +222,23 @@ export const CardTratamento = styled.div`
         }
 
         .especialidade {
-            margin-top:2rem;
+
+            h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+            color: var(--primary);
+        }
+
+            text-align: left;
+            margin-top:1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content:flex-start;
+            align-items: flex-start;
+
+            ul {
+                align-self: flex-start;
+            }
         }
 
         
@@ -309,20 +266,65 @@ export const CardTratamento = styled.div`
 
         img {
         object-fit: cover;
-        width: 10rem;
-        height: 10rem;
+        width: 9rem;
+        height: 9rem;
         filter: brightness(110%);
         border-radius: 100%;
+        border: 1px solid #dcdde1;
     }
-    }
-    
-
-    transition: 0.3s ease-in-out;
-    &:hover{
-        cursor: pointer;
-        transition: 0.3s ease-in-out;
-        transform: scale(1.05)
     }
 
+    .rodape {
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width:100%;
+        .socialMedia {
+       
+        list-style: none;
+        display:flex;
+        width: 100%;
+        align-self: flex-start;
+        justify-content:flex-start;
+        li {
+            padding: 0.3rem;
+            img {
+                cursor: pointer;
+                max-width: 1.5rem;
+                max-height: 1.5rem;
+            }
+        }
+    }
+
+    button {
+      padding: 0.4rem;
+ 
+      background: var(--primary);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border: none;
+      color: var(--secondary);
+      border-radius: 4px;
+      transition: 0.3s ease;
+      font-size: 0.9rem;
+      max-height: 2rem;
+      width: 25rem;
+      img {
+        width: 1.2rem;
+        height: 1.2rem;
+      }
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+
+
+    }
+
+   
 
 `

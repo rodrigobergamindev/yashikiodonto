@@ -12,10 +12,6 @@ export const MenuItems = [
         url: 'Tratamentos',
     },
     {
-        title: 'CASOS CLÍNICOS',
-        url: 'CasosClinicos',
-    },
-    {
         title: 'CONTATO',
         url: 'Contato',
     }
