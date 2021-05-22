@@ -144,6 +144,7 @@ import {Container, Description, DescHeader, ContainerBody, Bar,
                 
                 </ContainerBody>
                 <Footer/>
+                <img src="/img/socialMedia/whatsappfloat.png" className="iconFloat"/>
             </Container>
     
         )

@@ -12,7 +12,7 @@ interface Posts {
     media_type: string;
 }
 
-const tokenAcess = 'IGQVJXa1ZA2dEZAuUDBDMmpHZAWFrVUtrQTNUQndiOTRLVWlmelpqZAnJ5OERlY3I3Mnd6YTBOc2txX25nX1RVbjlwcHVZAZA3c4VnI0UGp2dmtrR2FidEtFdGdBTEx5UENoeTRMMlEtam1leHc1VkNQeWRSWgZDZD'
+const tokenAcess = 'IGQVJYMXpTaVV6Q0FzZADdSdGJYeVc5bFM5TmtaVDg0VGhjTV9reVo5T1pjU1Y4cVpUaFh5VlJmM1hDTE5CSWdYYi1xQzYwYUJZAN0J1MzE0d1RFd3hrSF8tc2FJd3FYd1dOWHNNN3MwMnJJVXVnNGpULQZDZD'
 
 
 
@@ -30,7 +30,7 @@ export  function InstagramFeed() {
                 {
                    feed.map((post, index) => {
                        if(index <=7) {
-                           if(post.media_type === "IMAGE") {
+                           if(post.media_type === "IMAGE" || post.media_type === "CAROUSEL_ALBUM") {
                             return (    
                                 <Post key={post.id} post={post}/>
                                )

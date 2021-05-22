@@ -89,6 +89,7 @@ import {Container, Description, DescHeader, ContainerBody, Desc, TextContainer, 
                 </Desc>
                 </ContainerBody>
                 <Footer/>
+                <img src="/img/socialMedia/whatsappfloat.png" className="iconFloat"/>
             </Container>
     
         )

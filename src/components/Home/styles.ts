@@ -264,7 +264,6 @@ export const ContainerSlider = styled.div`
 export const Card = styled.div`
     max-width: 250px;
     max-height: 250px;
-    margin: 0.5rem;
     display:flex;
     justify-content: center;
 
@@ -309,14 +308,14 @@ export const StyledFeed = styled.div`
 
 export const CardPost = styled.div`
     max-width: 250px;
-    max-height: 250px;
-    margin: 0.5rem;
+    height: 250px;
     display:flex;
     justify-content: center;
     overflow: hidden;
     transition: all 0.3s ease;
     
     img {
+        object-fit: cover;
         width: 100%;
         height: 100%;
         transition: all 0.3s ease;

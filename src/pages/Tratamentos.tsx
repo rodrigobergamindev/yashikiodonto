@@ -155,6 +155,7 @@
                 </Desc>
                 </ContainerBody>
                 <Footer/>
+                <img src="/img/socialMedia/whatsappfloat.png" className="iconFloat"/>
             </Container>
     
         )

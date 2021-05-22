@@ -18,6 +18,7 @@ export default function App() {
       <GlobalStyle/>
       <Home/>
       <Footer/>
+      <img src="/img/socialMedia/whatsappfloat.png" className="iconFloat"/>
     </>
   )
 }

@@ -106,7 +106,7 @@ export const Ul = styled.ul`
         flex-direction: column;
         list-style: none;
         position: absolute;
-        text-align: center;
+        text-align: left;
         top: 3.4rem;
         transform-origin: top center;
         animation: rotateX 300ms ease-in-out forwards;
@@ -206,7 +206,7 @@ export const Ul = styled.ul`
     flex-direction: column;
     list-style: none;
     position: absolute;
-    text-align: center;
+    text-align: left;
     top: 3.4rem;
     transform-origin: top center;
     animation: rotateX 300ms ease-in-out forwards;
