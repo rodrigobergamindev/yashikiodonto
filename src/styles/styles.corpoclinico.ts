@@ -125,7 +125,7 @@ export const ContainerAbout = styled.div`
 
         img {
             margin-right: 4rem;
-            height: 20rem;
+            height: 100%;
             max-width: 20rem;
             object-fit: cover;
             box-shadow: 10px  10px  var(--primary);

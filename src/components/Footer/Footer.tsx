@@ -5,7 +5,16 @@ export function Footer() {
         <StyledFooter>
             <div className="containerFooter">
             <div className="titleFooter">
-                    <h1>LOGO</h1>
+            <div className="logo">
+      
+      <img src="/img/logo.png"/>
+      <div className="headerlogo">
+
+     
+      <h4>YASHIKI</h4>
+      <h6>ODONTOLOGIA ESPECIALIZADA</h6>
+      </div>
+      </div>
                 </div>
             <div className="containerItems">
                 
@@ -22,15 +31,14 @@ export function Footer() {
                 <div className="columnFooter">
                     <h3>TRATAMENTOS</h3>
                     <ul>
-                        <li><a href="/">IMPLANTODONTIA</a></li>
-                        <li><a href="/">EXTRAÇÃO SIMPLES</a></li>
-                        <li><a href="/">EXTRAÇÃO DE SISO</a></li>
-                        <li><a href="/">RESTAURAÇÃO</a></li>
-                        <li><a href="/">CLAREAMENTO</a></li>
-                        <li><a href="/">PRÓTESE</a></li>
-                        <li><a href="/">LIMPEZA</a></li>
-                        <li><a href="/">CANAL</a></li>
-                        <li><a href="/">PERIODONTIA</a></li>
+                        <li><a href="/Implantodontia">IMPLANTODONTIA</a></li>
+                        <li><a href="/Extracao">EXTRAÇÃO</a></li>
+                        <li><a href="/Restauracao">RESTAURAÇÃO</a></li>
+                        <li><a href="/Clareamento">CLAREAMENTO</a></li>
+                        <li><a href="/Protese">PRÓTESE</a></li>
+                        <li><a href="/Limpeza">LIMPEZA</a></li>
+                        <li><a href="/Canal">CANAL</a></li>
+                        <li><a href="/Periodontia">PERIODONTIA</a></li>
                     </ul>
                 </div>
 

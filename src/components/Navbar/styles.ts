@@ -19,15 +19,51 @@ export const Nav = styled.nav`
     
 
 .logo {
-  flex:1;
-  background: var(--secondary);
+
   display: flex;
   align-items: center;
   justify-content:center;
+ 
 
-  h1 {
-      color: var(--primary);
+  .headerlogo {
+  
+   
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    flex:4;
+    padding-left: 0.5rem;
+    align-items:flex-start;
+    flex-wrap: nowrap;
+    h4 {
+      color: var(--secondary);
+      font-size: 0.9rem;
+      letter-spacing:2px;
+      
+    }
+
+    h6 {
+        font-weight: 600;
+        font-size: 0.6rem;
+        color: var(--primary);
+        border-radius: 3px;
+        padding: 0.2rem;
+        background: var(--secondary);
+    }
   }
+
+  img {
+    object-fit: contain;
+    height: 2.5rem;
+
+  }
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  &:hover {
+    transition: 0.5s ease-in-out;
+    
+  }
+
 }
 
 `
@@ -43,7 +79,14 @@ export const SocialMediaList = styled.ul`
 
         li {
           padding: 0.5rem;
-          
+
+          color: var(--secondary);         
+
+          &:first-child {
+    
+            color: var(--secondary);
+         
+          } 
 
           img {
             width: 1.5rem;

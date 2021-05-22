@@ -20,7 +20,7 @@ export function Home() {
     return (
         <Container>
             <div className="firstContent">
-                <h1>Dr. Eder Massashi Yashiki</h1>
+                <h1>Yashiki Odontologia</h1>
                 <Typical
                     steps={[frase, 5000, frase2, 5000]}
                     loop={Infinity}

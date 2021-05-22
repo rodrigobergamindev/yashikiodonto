@@ -123,7 +123,7 @@ import {Container, Description, DescHeader, ContainerBody, Bar,
 
                         <div className="aboutDescription">
 
-                            <img src="/img/fachada.jpg"/>
+                            <img src="/img/fachada.png"/>
 
 
                             <div className="containerText">
