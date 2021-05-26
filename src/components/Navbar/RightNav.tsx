@@ -10,9 +10,10 @@ const RightNav = ({ open }) => {
 
   const [visible, setVisible] = useState(false);
   const [visibleContato, setVisibleContato] = useState(false);
+  const [visibleHof, setVisibleHof] = useState(false);
 
   return (
-    <Ul open={open} visible={visible} visibleContato={visibleContato}>
+    <Ul open={open} visible={visible} visibleContato={visibleContato} visibleHof={visibleHof}>
        {MenuItems.map((item, index) => {
 
                       if(item.title === "TRATAMENTOS"){
@@ -78,6 +79,44 @@ const RightNav = ({ open }) => {
                             
                       )
                   }
+
+                  
+                  if(item.title === "HARMONIZAÇÃO OROFACIAL"){
+                    return (
+                    
+                      <li className="submenuHof" key={index}>
+  
+                        <a href={item.url}>
+                          {item.title}
+                          </a>
+                          <img className="arrowHof" src="/img/icons/arrow.png" onClick={() =>{
+                          setVisibleHof(!visibleHof)
+                      }}/>
+                
+                         
+                            <ul className="menuInferiorHof" onMouseLeave={() => {
+                        setVisibleHof(false)
+                      }}>
+                            <li><a href="/Botox">BOTOX</a></li>
+                            <li><a href="/PreenchimentoFacial">PREENCHIMENTOS FACIAIS</a></li>
+                            <li><a href="/PreenchimentoLabial">PREENCHIMENTO LABIAL</a></li>
+                            <li><a href="/Fios">FIOS DE PDO</a></li>
+                            <li><a href="/Microagulhamento">MICROAGULHAMENTO</a></li>
+                            <li><a href="/LipoPapada">LIPO ENZIMÁTICA DE PAPADA</a></li>
+                            <li><a href="/Rinomodelacao">RINOMODELAÇÃO</a></li>
+                            <li><a href="/Skinbooster">SKINBOOSTER</a></li>
+                            <li><a href="/Bichectomia">BICHECTOMIA</a></li>
+                          </ul>
+                         
+                          
+                          </li>
+
+                          
+                       
+                          
+                    )
+                }
+
                     return (
                         <li key={index}>
                           <a href={item.url}>

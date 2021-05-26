@@ -12,6 +12,10 @@ export const MenuItems = [
         url: 'Tratamentos',
     },
     {
+        title: 'HARMONIZAÇÃO OROFACIAL',
+        url: 'Harmonizacao',
+    },
+    {
         title: 'CONTATO',
         url: 'Contato',
     }

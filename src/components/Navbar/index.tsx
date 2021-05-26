@@ -12,7 +12,7 @@ export const Navbar = () => {
       
       <img src="/img/logo.png"/>
       <div className="headerlogo">
-
+      
      
       <h4>YASHIKI</h4>
       <h6>ODONTOLOGIA ESPECIALIZADA</h6>
