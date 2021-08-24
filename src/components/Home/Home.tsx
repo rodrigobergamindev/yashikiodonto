@@ -54,7 +54,7 @@ export function Home() {
                         <h1>ENCONTRE-NOS NO INSTAGRAM</h1>
                     </div>
 
-                    <InstagramFeed/>
+                  
 
             </DisplaySocialMedia>
 
